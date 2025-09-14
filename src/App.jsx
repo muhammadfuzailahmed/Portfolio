@@ -5,16 +5,18 @@ import './App.css'
 import Header from './Components/Header/Header'
 import {Outlet} from 'react-router-dom'
 import Footer from './Components/Footer/Footer'
+import {Themecontext} from  './Components/Contexts/Themecontext'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1 className='bg-amber-400'>Hello World!</h1>
+      <Themecontext>
       <Header />
       <Outlet />
       <Footer />
+      </Themecontext>
     </>
   )
 }
