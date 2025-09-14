@@ -20,7 +20,7 @@ function Header() {
                     <NavHashLink smooth to="/#home"><li className='font-[700] uppercase hover:text-cyan-400 dark:text-white'>Contact</li></NavHashLink>
                 </ul>
             </div>
-            <div className='mt-1.5'>
+            <div>
                 <button onClick={themeToggle} className='dark:text-white cursor-pointer text-xl'>
                     {theme === 'dark' ? <i class="fa-solid fa-sun"></i> : <i class="fa-solid fa-moon"></i>
 }

@@ -1,7 +1,7 @@
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react'
 
 const ThemeContext = createContext({
-    theme: 'light',
+    theme: 'dark',
     setTheme: () => {},
     themeToggle: () => {}
 })
@@ -9,7 +9,7 @@ const ThemeContext = createContext({
 const THEME_KEY = 'theme';
 
 function getInitialTheme() {
-  if (typeof window === 'undefined') return 'light';
+  if (typeof window === 'undefined') return 'dark';
   const stored = localStorage.getItem(THEME_KEY);
   if (stored === 'light' || stored === 'dark') return stored;
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -18,7 +18,7 @@ function getInitialTheme() {
 
 
 export function Themecontext({children}) {
-    const [theme, setTheme] = useState('light')
+    const [theme, setTheme] = useState(getInitialTheme)
 
     useEffect(() => {
         const root = document.documentElement;
@@ -27,6 +27,9 @@ export function Themecontext({children}) {
         }else{
             root.classList.remove('dark')
         }
+         try {
+      localStorage.setItem(THEME_KEY, theme);
+    } catch (_) {}
     },[theme])
 
     const themeToggle = useCallback(() => setTheme(t => t === 'dark' ? 'light' : 'dark'), [])
