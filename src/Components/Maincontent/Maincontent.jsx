@@ -1,8 +1,11 @@
 import React from 'react'
+import Hero from '../Hero/Hero'
 
 function Maincontent() {
   return (
-    <div>Maincontent</div>
+    <section id='home'>
+        <Hero />
+    </section>
   )
 }
 
