@@ -52,10 +52,10 @@ function Header() {
             <div>
                 <ul className='flex items-center gap-8'>
                     <NavHashLink smooth to="/#home" className={`${isHome ? "text-cyan-400" : "text-black dark:text-white"}`}><li className='font-[700] uppercase hover:text-cyan-400 '>Home</li></NavHashLink>
-                    <NavHashLink smooth to="/#about" className={`${isAbout ? "text-cyan-400" : "text-black dark:text-white"}`}><li className='font-[700] uppercase hover:text-cyan-400 dark:text-white'>About</li></NavHashLink>
-                    <NavHashLink smooth to="/#skills" className={`${isSkills ? "text-cyan-400" : "text-black dark:text-white"}`}><li className='font-[700] uppercase hover:text-cyan-400 dark:text-white'>Skills</li></NavHashLink>
-                    <NavHashLink smooth to="/#projects" className={`${isProjects ? "text-cyan-400" : "text-black dark:text-white"}`}><li className='font-[700] uppercase hover:text-cyan-400 dark:text-white'>Projects</li></NavHashLink>
-                    <NavHashLink smooth to="/#contact" className={`${isContact ? "text-cyan-400" : "text-black dark:text-white"}`}><li className='font-[700] uppercase hover:text-cyan-400 dark:text-white'>Contact</li></NavHashLink>
+                    <NavHashLink smooth to="/#about" className={`${isAbout ? "text-cyan-400" : "text-black dark:text-white"}`}><li className='font-[700] uppercase hover:text-cyan-400 '>About</li></NavHashLink>
+                    <NavHashLink smooth to="/#skills" className={`${isSkills ? "text-cyan-400" : "text-black dark:text-white"}`}><li className='font-[700] uppercase hover:text-cyan-400 '>Skills</li></NavHashLink>
+                    <NavHashLink smooth to="/#projects" className={`${isProjects ? "text-cyan-400" : "text-black dark:text-white"}`}><li className='font-[700] uppercase hover:text-cyan-400 '>Projects</li></NavHashLink>
+                    <NavHashLink smooth to="/#contact" className={`${isContact ? "text-cyan-400" : "text-black dark:text-white"}`}><li className='font-[700] uppercase hover:text-cyan-400 '>Contact</li></NavHashLink>
                 </ul>
             </div>
             <div>
