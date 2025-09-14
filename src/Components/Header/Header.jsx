@@ -60,8 +60,7 @@ function Header() {
             </div>
             <div>
                 <button onClick={themeToggle} className='dark:text-white cursor-pointer text-xl'>
-                    {theme === 'dark' ? <i class="fa-solid fa-sun"></i> : <i class="fa-solid fa-moon"></i>
-}
+                    {theme === 'dark' ? <i class="fa-solid fa-sun"></i> : <i class="fa-solid fa-moon"></i>}
                 </button>
             </div>
         </nav>
