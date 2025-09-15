@@ -12,7 +12,7 @@ function Aboutcard({title}) {
         transition={{
             duration: 0.3
         }}
-        className="card md:w-[33%] md:h-[100%] h-[20%] bg-green-500 relative">
+        className="card w-full md:w-1/3 h-16 md:h-full relative">
             <h1 className='font-bold text-4xl absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 dark:text-white'>{title}</h1>
     </motion.div>
   )
