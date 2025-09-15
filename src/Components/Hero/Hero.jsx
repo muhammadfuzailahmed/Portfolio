@@ -21,15 +21,8 @@ function Hero() {
                 </div>
             </div>
             {/* right */}
-            <div className='md:w-[28vw] relative'>
-                <div className='md:w-[26vw] md:h-[30vh] border-4 border-black m-auto dark:border-gray-700 rounded-lg'>
-                    <video loop autoPlay muted className='w-[100%] h-[100%] object-cover rounded-sm cursor-pointer' src={Mainvideo}></video>
-                </div>
-                <div className='absolute bottom-0 md:w-full h-[1.5vh] bg-gray-500 dark:bg-gray-900 rounded-lg'>
-                    <div className='w-[6vw] h-1.5 bg-gray-800 absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] rounded-lg'>
-
-                    </div>
-                </div>
+            <div className='md:w-[30vw] md:h-[50vh] relative'>
+                <video loop autoPlay muted className='w-[100%] h-[100%] object-cover rounded-lg cursor-pointer' src={Mainvideo}></video>
             </div>
         </div>
         
