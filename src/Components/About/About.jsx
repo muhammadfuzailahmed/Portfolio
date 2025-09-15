@@ -5,6 +5,8 @@ import Codeimg from '../../assets/About/Codeimg.png'
 import Pythonimg from '../../assets/About/Pythonimg.png'
 import Webimg from '../../assets/About/Webimg.png'
 import reactLogo from '../../assets/About/react.svg'
+import {motion} from 'motion/react'
+import Aboutcard from '../Cards/Aboutcard';
 
 function About() {
 
@@ -42,7 +44,7 @@ function About() {
   ]
 
   return (
-    <div className='w-full h-screen dark:bg-[#0d0e0e] pt-10'>
+    <div className='w-full min-h-screen dark:bg-[#0d0e0e] pt-10'>
         <div className='text-center'>
         <h1 className='dark:text-white font-bold text-5xl'>About Me</h1>
         <div className='w-52 h-2 bg-cyan-400 m-auto rounded-lg mt-3'></div>
@@ -75,6 +77,17 @@ function About() {
           </div>
 
         </div>
+
+        <div className='md:mt-10 mt-15'>
+              <hr className='bg-gray-800 md:w-[70vw] w-[90vw] h-1 m-auto' />
+            <div className='w-[70vw] md:h-[12vh] h-auto m-auto md:flex items-center'>
+                <Aboutcard title="LinkedIn" />
+                <Aboutcard title="GitHub" />
+                <Aboutcard title="Instagram" />
+            </div>
+            <hr className='bg-gray-800 md:w-[70vw] w-[90vw] h-1 m-auto' />
+        </div>
+
         <div>
               <div className='w-[80vw] m-auto'>
                   {/* {Render cards here} */}
