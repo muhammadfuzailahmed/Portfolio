@@ -1,6 +1,6 @@
 import React from 'react'
 import Mainvideo from '../../assets/Mainvideo.mp4'
-import Butoon from '../Button/Butoon'
+import Button from '../Button/Button'
 
 function Hero() {
   return (
@@ -13,10 +13,10 @@ function Hero() {
                 <p className='dark:text-white mt-10 md:w-[35vw] font-[600]'><span className='relative bottom-1.5 right-0.5'><i class="fa-solid fa-quote-left"></i></span>Built a feature-rich e-commerce demo using React and loalStorage – with login/signup, product pages, Filters, cart totals, checkout, and order history. Passionate about clean UI, responsive design, actively expanding my skills through D3A and Android development in my upcoming semester.<span className='relative bottom-1.5 left-0.5'><i class="fa-solid fa-quote-right"></i></span></p>
                 <div className='flex items-center gap-4 mt-5'>
                     <div>
-                <Butoon title="Download Resume"  bg="tranparent" bgHover="hover:bg-cyan-400"/>
+                <Button title="Download Resume"  bg="tranparent" bgHover="hover:bg-cyan-400"/>
                     </div>
                     <div>
-                    <Butoon title="Let's Connect"  bg="bg-cyan-500" bgHover="hover:bg-transparent"/>
+                    <Button title="Let's Connect"  bg="bg-cyan-500" bgHover="hover:bg-transparent"/>
                     </div>
                 </div>
             </div>
