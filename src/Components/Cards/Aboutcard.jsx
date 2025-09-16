@@ -6,10 +6,11 @@ function Aboutcard({title,location}) {
   return (
       <motion.div
         whileHover={{
-            scale: 1.1,
+            scale: 1.02,
             cursor: "pointer",
             backgroundColor: "#000000",
-            color: "#fff"
+            color: "#fff",
+            boxShadow: "5px 5px 10px 2px cyan"
         }}
         transition={{
             duration: 0.3
