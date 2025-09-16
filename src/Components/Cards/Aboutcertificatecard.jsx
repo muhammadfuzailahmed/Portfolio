@@ -26,7 +26,7 @@ function Aboutcertificatecard({provider, desc, type, img}) {
     }}
     onMouseEnter={MouseEnter}
     onMouseLeave={MouseLeave}
-    className='p-5 border-cyan-400 border-2 rounded-md w-[20vw] relative shadow-md hover:shadow-lg shadow-cyan-300 transition-all'>
+    className='p-5 border-cyan-400 border-2 rounded-md md:w-[20vw] w-[90vw] md:m-0 mt-5 m-auto relative shadow-md hover:shadow-lg shadow-cyan-300 transition-all'>
         <p className='absolute right-3 top-2 font-bold dark:text-white arrow'><i class="fa-solid fa-arrow-right"></i></p>
         <p className='dark:text-gray-300 text-center text-xl'><span><i class="fa-solid fa-certificate"></i></span> Coursera</p>
         <hr className='border-2 border-white my-3' />
