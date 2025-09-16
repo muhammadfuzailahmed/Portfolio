@@ -7,6 +7,7 @@ import Webimg from '../../assets/About/Webimg.png'
 import reactLogo from '../../assets/About/react.svg'
 import {motion} from 'motion/react'
 import Aboutcard from '../Cards/Aboutcard';
+import Aboutcertificatecard from '../Cards/Aboutcertificatecard';
 
 function About() {
 
@@ -54,7 +55,7 @@ function About() {
             {/* vertical line centered in the 64px icon column */}
             <span
               aria-hidden
-              className="pointer-events-none absolute top-0 bottom-0 left-[25px] w-[2px] bg-gray-600 dark:bg-gray-700"
+              className="pointer-events-none absolute top-0 bottom-0 left-[25px] w-[2px] bg-gray-600 dark:bg-[#7A7A73]"
             />
 
             <ul className="grid grid-cols-[64px,1fr] gap-x-4">
@@ -64,7 +65,7 @@ function About() {
                     <img
                       src={obj.img}
                       alt="img"
-                      className="w-12 h-12 rounded-full z-10 bg-black/10 dark:bg-white/10"
+                      className="w-12 h-12 rounded-full z-10 bg-black/10 dark:bg-white/10 cursor-pointer"
                     />
                   </div>
                   <div className="col-[2] py-4">
@@ -79,18 +80,22 @@ function About() {
         </div>
 
         <div className='md:mt-10 mt-15'>
-              <hr className='bg-gray-800 md:w-[70vw] w-[90vw] h-1 m-auto' />
+              <hr className='bg-[#7A7A73] md:w-[70vw] w-[90vw] h-1 m-auto' />
             <div className='w-[70vw] md:h-[12vh] h-auto m-auto md:flex items-center'>
-                <Aboutcard title="LinkedIn" />
-                <Aboutcard title="GitHub" />
-                <Aboutcard title="Instagram" />
+                <Aboutcard title="LinkedIn" location="https://www.linkedin.com/in/mfuzailahmed/"/>
+                <Aboutcard title="GitHub" location="https://github.com/muhammadfuzailahmed" />
+                <Aboutcard title="Instagram" location="https://www.instagram.com/muhammad_fuzail_30/" />
             </div>
-            <hr className='bg-gray-800 md:w-[70vw] w-[90vw] h-1 m-auto' />
+            <hr className='bg-[#7A7A73] md:w-[70vw] w-[90vw] h-1 m-auto' />
         </div>
 
         <div>
-              <div className='w-[80vw] m-auto'>
-                  {/* {Render cards here} */}
+              <div className='w-[50vw] m-auto'>
+                  <h1 className='dark:text-white font-bold text-4xl text-center mt-10'><span><i class="fa-solid fa-graduation-cap"></i></span> Certificates</h1>
+                  <div className='w-[45vw] m-auto mt-10 flex items-center justify-between'>
+                      <Aboutcertificatecard provider="Meta"desc="Front-End Web Developer" type="Course Specialization" img={<i class="fa-brands fa-meta"></i>} />
+                      <Aboutcertificatecard provider="Google"desc="Programming in Python" type="Crash course" img={<i class="fa-brands fa-google"></i>} />
+                  </div>
               </div>
         </div>
     </div>
