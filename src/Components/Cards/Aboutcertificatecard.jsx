@@ -1,11 +1,12 @@
 import React from 'react'
 import {motion} from 'motion/react'
+import Button from '../Button/Button';
 
 function Aboutcertificatecard({provider, desc, type, img}) {
     function MouseEnter(e){
         const arrow = e.currentTarget.querySelector('.arrow');
         arrow.style.transition = "0.5s ease"
-        arrow.style.transform = "rotate(-25deg)"
+        arrow.style.transform = "rotate(-35deg)"
     }
     function MouseLeave(e) {
         const arrow = e.currentTarget.querySelector('.arrow');
@@ -16,7 +17,7 @@ function Aboutcertificatecard({provider, desc, type, img}) {
     <motion.div 
     whileHover={{
         cursor: "pointer",
-        scale: 1.1
+        scale: 1.05
     }}
     transition={{
         type: "spring",
@@ -33,6 +34,9 @@ function Aboutcertificatecard({provider, desc, type, img}) {
         <h1 className='dark:text-white font-bold text-3xl text-center'><span>{img}</span> {provider}</h1>
         <p className='dark:text-white font-bold text-lg mt-5'>{desc}</p>
         <p className='dark:text-gray-400'>{type}</p>
+        <div className='mt-4'>
+        <Button title="Show All" bg="transparent" bgHover="hover:text-cyan-400" />
+        </div>
     </motion.div>
   )
 }
