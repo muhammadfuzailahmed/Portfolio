@@ -34,7 +34,7 @@ function Aboutcertificatecard({provider, desc, type, img}) {
         <h1 className='dark:text-white font-bold text-3xl text-center'><span>{img}</span> {provider}</h1>
         <p className='dark:text-white font-bold text-lg mt-5'>{desc}</p>
         <p className='dark:text-gray-400'>{type}</p>
-        <div className='mt-4'>
+        <div className='mt-4 text-center'>
         <Button title="Show All" bg="transparent" bgHover="hover:text-cyan-400" />
         </div>
     </motion.div>
