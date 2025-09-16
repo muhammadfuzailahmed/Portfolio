@@ -2,7 +2,7 @@ import React from 'react'
 import { v4 as uuidv4 } from 'uuid';
 import Calendarimg from '../../assets/About/Calendarimg.jpg'
 import Codeimg from '../../assets/About/Codeimg.png'
-import Pythonimg from '../../assets/About/Pythonimg.png'
+import Pythonimg from '../../assets/About/pythonimg.png'
 import Webimg from '../../assets/About/Webimg.png'
 import reactLogo from '../../assets/About/react.svg'
 import {motion} from 'motion/react'
@@ -90,9 +90,9 @@ function About() {
         </div>
 
         <div>
-              <div className='w-[50vw] m-auto'>
+              <div className='md:w-[50vw] m-auto'>
                   <h1 className='dark:text-white font-bold text-4xl text-center mt-10'><span><i class="fa-solid fa-graduation-cap"></i></span> Certificates</h1>
-                  <div className='w-[45vw] m-auto mt-10 flex items-center justify-between'>
+                  <div className='md:w-[45vw] m-auto mt-10 md:flex items-center justify-between'>
                       <Aboutcertificatecard provider="Meta"desc="Front-End Web Developer" type="Course Specialization" img={<i class="fa-brands fa-meta"></i>} />
                       <Aboutcertificatecard provider="Google"desc="Programming in Python" type="Crash course" img={<i class="fa-brands fa-google"></i>} />
                   </div>
