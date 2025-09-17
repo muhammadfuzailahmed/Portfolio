@@ -17,7 +17,7 @@ function Aboutcertificatecard({provider, desc, type, img}) {
     <motion.div 
     whileHover={{
         cursor: "pointer",
-        scale: 1.05
+        scale: 1.02
     }}
     transition={{
         type: "spring",
