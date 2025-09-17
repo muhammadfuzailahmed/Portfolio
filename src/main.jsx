@@ -6,6 +6,7 @@ import { BrowserRouter, Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
 import Maincontent from './Components/Maincontent/Maincontent.jsx'
 import Certificatesbymeta from './Components/Pages/Certificates/Certificatesbymeta.jsx'
+import Certificatesbygoogle from './Components/Pages/Certificates/Certificatesbygoogle.jsx'
 
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')).render(
       <Route path='/' element={<App />} > 
       <Route index element={<Maincontent />}/>
       <Route path='certificates/meta' element={<Certificatesbymeta />}/>
+      <Route path='certificates/google' element={<Certificatesbygoogle />}/>
       </Route>
     </Routes>
     </BrowserRouter>
