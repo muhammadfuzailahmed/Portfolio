@@ -1,13 +1,20 @@
-import React from 'react'
+import {useEffect} from 'react'
 import Button from '../Button/Button'
 import {Link} from 'react-router-dom'
 import {motion} from 'motion/react'
 import Metacertificates from '../Data/Metacertificates'
 
 function Certificatecards() {
+    useEffect(() => {
+        window.scrollTo({top: 0,
+            left: 0,
+            behavior: "instant"
+        })
+    }, [])
   return (
     <div className='w-full dark:bg-[#0d0e0e]'>
-            <h1 className='text-center font-bold text-4xl dark:text-white py-10'>Projects</h1>
+            <h1 className='text-center font-bold text-4xl dark:text-white pt-10'>Projects</h1>
+            <div className='w-38 h-2 bg-cyan-400 m-auto rounded-lg mt-2 mb-8'></div>
         <div className='w-[80vw] m-auto grid md:grid-cols-4 gap-5 '>
             {Metacertificates.map(card => (
                 <motion.div 

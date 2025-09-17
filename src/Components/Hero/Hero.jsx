@@ -1,9 +1,15 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {motion} from 'motion/react'
 import Mainvideo from '../../assets/Mainvideo.mp4'
 import Button from '../Button/Button'
 
 function Hero() {
+    useEffect(() => {
+            window.scrollTo({top: 0,
+                left: 0,
+                behavior: "instant"
+            })
+        }, [])
   return (
     <>
     <div className='w-full h-[90vh] dark:bg-[#0d0e0e]'>
