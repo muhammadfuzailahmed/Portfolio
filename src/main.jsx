@@ -7,9 +7,22 @@ import { Route } from 'react-router-dom'
 import Maincontent from './Components/Maincontent/Maincontent.jsx'
 import Certificatesbymeta from './Components/Pages/Certificates/Certificatesbymeta.jsx'
 import Certificatesbygoogle from './Components/Pages/Certificates/Certificatesbygoogle.jsx'
+ import { ToastContainer } from 'react-toastify';
 
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
+    <ToastContainer
+    position="top-center"
+    autoClose={3000}
+    hideProgressBar={false}
+    newestOnTop={false}
+    closeOnClick={false}
+    rtl={false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover
+    theme="dark"
+    />
     <Routes>
       <Route path='/' element={<App />} > 
       <Route index element={<Maincontent />}/>
