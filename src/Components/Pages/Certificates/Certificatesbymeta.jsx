@@ -1,5 +1,5 @@
 import React from 'react'
-import Certificatecards from '../../Cards/Certificatecards'
+import Certificatecards from '../../Cards/Metacertificatecards'
 
 function Certificatesbymeta() {
   return (
