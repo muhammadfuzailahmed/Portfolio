@@ -93,8 +93,8 @@ function About() {
               <div className='md:w-[50vw] m-auto'>
                   <h1 className='dark:text-white font-bold text-4xl text-center mt-10'><span><i class="fa-solid fa-graduation-cap"></i></span> Certificates</h1>
                   <div className='md:w-[45vw] m-auto mt-10 md:flex items-center justify-between'>
-                      <Aboutcertificatecard provider="Meta"desc="Front-End Web Developer" type="Course Specialization" img={<i class="fa-brands fa-meta"></i>} />
-                      <Aboutcertificatecard provider="Google"desc="Programming in Python" type="Crash course" img={<i class="fa-brands fa-google"></i>} />
+                      <Aboutcertificatecard redirectTo="/certificates/meta" provider="Meta"desc="Front-End Web Developer" type="Course Specialization" img={<i class="fa-brands fa-meta"></i>} />
+                      <Aboutcertificatecard redirectTo="/certificates/google" provider="Google"desc="Programming in Python" type="Crash course" img={<i class="fa-brands fa-google"></i>} />
                   </div>
               </div>
         </div>
