@@ -1,15 +1,28 @@
-import React,{useEffect} from 'react'
+import React,{useEffect, useState} from 'react'
 import {motion} from 'motion/react'
 import Mainvideo from '../../assets/Mainvideo.mp4'
 import Button from '../Button/Button'
+ import { toast } from 'react-toastify';
 
 function Hero() {
+    const [downloadSuccessfull, isDownloadSuccessfull] = useState(false)
     useEffect(() => {
             window.scrollTo({top: 0,
                 left: 0,
                 behavior: "instant"
             })
         }, [])
+
+    function DownloadResume() {
+        const link = document.createElement("a")
+        link.href = "../../public/Resume.pdf";
+        link.setAttribute("download", "My_resume.pdf");
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link)
+        isDownloadSuccessfull(true)
+    }
+
   return (
     <>
     <div className='w-full h-[90vh] dark:bg-[#0d0e0e]'>
@@ -28,7 +41,9 @@ function Hero() {
                 <p className='dark:text-white md:mt-10 mt-5 md:w-[35vw] text-justify md:font-[600]'><span className='relative bottom-1.5 right-0.5'><i class="fa-solid fa-quote-left"></i></span>Built a feature-rich e-commerce demo using React and loalStorage – with login/signup, product pages, Filters, cart totals, checkout, and order history. Passionate about clean UI, responsive design, actively expanding my skills through D3A and Android development in my upcoming semester.<span className='relative bottom-1.5 left-0.5'><i class="fa-solid fa-quote-right"></i></span></p>
                 <div className='flex items-center gap-4 mt-5 md:mb-0 mb-5'>
                     <div>
-                <Button title="Download Resume"  bg="tranparent" bgHover="hover:bg-cyan-400"/>
+                        <div onClick={DownloadResume}>
+                    <Button title="Download Resume" bg="tranparent" bgHover="hover:bg-cyan-400"/>
+                        </div>
                     </div>
                     <div>
                     <Button title="Let's Connect"  bg="bg-cyan-500" bgHover="hover:bg-transparent"/>
@@ -40,7 +55,9 @@ function Hero() {
                 <video loop autoPlay muted className='w-[100%] h-[100%] object-cover rounded-lg cursor-pointer' src={Mainvideo}></video>
             </div>
         </div>
-        
+        {
+            downloadSuccessfull && toast.success("Downloaded Successfully")
+        }
     </div>
     </>
   )
