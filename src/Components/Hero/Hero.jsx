@@ -37,7 +37,7 @@ function Hero() {
 
   return (
     <>
-    <div className='w-full h-[90vh] dark:bg-[#0d0e0e]'>
+    <div className='w-full md:h-screen h-[95vh] dark:bg-[#0d0e0e]'>
         <div className='md:flex items-center justify-between md:px-40 md:pt-40 pt-10'>
             {/* left */}
             <div className='md:w-[45vw] w-[90vw] md:m-0 m-auto text-center md:text-left'>
