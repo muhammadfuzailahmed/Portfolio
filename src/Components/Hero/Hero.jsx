@@ -13,13 +13,25 @@ function Hero() {
             })
         }, [])
 
-    function DownloadResume() {
-        const link = document.createElement("a")
-        link.href = "../../public/Resume.pdf";
-        link.setAttribute("download", "My_resume.pdf");
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link)
+    async function DownloadResume() {
+        try {
+        const res = await fetch('/Resume.pdf', { cache: 'no-store' });
+        if (!res.ok) throw new Error('Failed to fetch PDF');
+        const blob = await res.blob();
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'My_resume.pdf'; // suggested filename
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+
+        URL.revokeObjectURL(url);
+    } catch (e) {
+        // Fallback: open in a new tab (user can “Share/Save”)
+        window.open('/Resume.pdf', '_blank', 'noopener,noreferrer');
+    }
         isDownloadSuccessfull(true)
     }
 
