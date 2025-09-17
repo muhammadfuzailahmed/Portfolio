@@ -45,7 +45,7 @@ function About() {
   ]
 
   return (
-    <div className='w-full min-h-screen dark:bg-[#0d0e0e] pt-10'>
+    <div className='w-full min-h-screen dark:bg-[#0d0e0e] pt-2'>
         <div className='text-center'>
         <h1 className='dark:text-white font-bold text-5xl'>About Me</h1>
         <div className='w-52 h-2 bg-cyan-400 m-auto rounded-lg mt-3'></div>
