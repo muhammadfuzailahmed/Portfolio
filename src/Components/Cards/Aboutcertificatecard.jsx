@@ -1,8 +1,9 @@
 import React from 'react'
 import {motion} from 'motion/react'
 import Button from '../Button/Button';
+import { Link } from 'react-router-dom';
 
-function Aboutcertificatecard({provider, desc, type, img}) {
+function Aboutcertificatecard({provider, desc, type, img, redirectTo}) {
     function MouseEnter(e){
         const arrow = e.currentTarget.querySelector('.arrow');
         arrow.style.transition = "0.5s ease"
@@ -35,7 +36,9 @@ function Aboutcertificatecard({provider, desc, type, img}) {
         <p className='dark:text-white font-bold text-lg mt-5'>{desc}</p>
         <p className='dark:text-gray-400'>{type}</p>
         <div className='mt-4 text-center'>
+        <Link to={redirectTo}>
         <Button title="Show All" bg="transparent" bgHover="hover:text-cyan-400" />
+        </Link>
         </div>
     </motion.div>
   )
