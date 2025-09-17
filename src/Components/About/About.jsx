@@ -16,13 +16,13 @@ function About() {
       id: uuidv4(),
       img: Codeimg,
       title: "Started with C++ & C#",
-      description: "Began with learnig programming fundamentals with C++and C#."
+      description: "Began with learning programming fundamentals with C++and C#."
     },
     {
       id: uuidv4(),
       img: Pythonimg,
       title: "Explored Python",
-      description: "Dived deeper into object-orlented programmmg concepts using Python."
+      description: "Dived deeper into object-oriented programming concepts using Python."
     },
     {
       id: uuidv4(),
@@ -40,7 +40,7 @@ function About() {
       id: uuidv4(),
       img: Calendarimg,
       title: "Next: DSA & Android App Development (2025)",
-      description: "Dived deeper into object-orlented programmmg concepts using Python."
+      description: "Dived deeper into object-oriented programming concepts using Python."
     },
   ]
 
