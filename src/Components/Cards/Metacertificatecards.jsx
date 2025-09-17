@@ -13,8 +13,8 @@ function Certificatecards() {
     }, [])
   return (
     <div className='w-full dark:bg-[#0d0e0e]'>
-            <h1 className='text-center font-bold text-4xl dark:text-white pt-10'>Projects</h1>
-            <div className='w-38 h-2 bg-cyan-400 m-auto rounded-lg mt-2 mb-8'></div>
+            <h1 className='text-center font-bold text-4xl dark:text-white pt-10'>Meta Certificates</h1>
+            <div className='w-48 h-2 bg-cyan-400 m-auto rounded-lg mt-2 mb-8'></div>
         <div className='w-[80vw] m-auto grid md:grid-cols-4 gap-5 '>
             {Metacertificates.map(card => (
                 <motion.div 
@@ -26,14 +26,14 @@ function Certificatecards() {
                 transition={{
                     duration: 0.5
                 }}
-                className='border-2 border-cyan-400 p-2 mb-2 h-[35vh] relative rounded-sm '>
+                className='border-2 border-cyan-400 p-2 mb-2 h-full flex flex-col rounded-sm'>
                     <h2 className='dark:text-white mb-2 text-center text-xl'><span className='text-blue-600'>{card.img}</span> {card.provider} &#xb7; {card.platform}</h2>
                     <hr className='bg-gray-700 h-1 my-1' />
                     <h1 className='dark:text-white font-bold text-lg mb-4 text-center'>{card.title}</h1>
-                    <p className='my-2 w-50'>{card.learnedObjectives.map(obj => (
-                        <span className='dark:text-white px-1.5 py-1 mx-1 my-1 dark:bg-gray-500 bg-gray-300'>{obj}</span>
+                    <p className='my-3 flex flex-wrap gap-2 justify-center'>{card.learnedObjectives.map(obj => (
+                        <span className='dark:text-white px-2 py-1 mx-1 my-1 dark:bg-gray-500 bg-gray-300'>{obj}</span>
                     ))}</p>
-                    <div className='my-4 text-center absolute bottom-0 w-[100%]'>
+                    <div className='mt-auto pb-1 text-center'>
                     <Link to={card.verifyAt} target='_blank'>
                     <Button title="View Certificate" bg="transparent" bgHover="hover:text-cyan-400"/>
                     </Link>
