@@ -82,7 +82,7 @@ function Header() {
                 <Link to="/"><h1 className='font-bold text-4xl dark:text-white'>Fuzail.</h1></Link>
             </div>
             <div>
-                <ul className='md:flex items-center gap-8 md:relative absolute md:top-0 top-0 left-1/2 translate-x-[-50%] md:bg-transparent md:blur-none backdrop-blur-5xl md:w-auto w-[100vw] md:h-auto h-0 overflow-hidden md:dark:bg-transparent dark:bg-gray-900 bg-amber-100 md:py-0 py-0 menu'>
+                <ul className='md:flex  z-10 items-center gap-8 md:relative absolute md:top-0 top-0 left-1/2 translate-x-[-50%] md:bg-transparent md:blur-none backdrop-blur-5xl md:w-auto w-[100vw] md:h-auto h-0 overflow-hidden md:dark:bg-transparent dark:bg-gray-900 bg-amber-100 md:py-0 py-0 menu'>
                 <li onClick={HandleCloseClick} className='font-[700] uppercase hover:text-cyan-400 text-center mb-2 md:mb-0 md:hidden dark:text-white text-3xl absolute top-2 right-5'><i class="fa-solid fa-xmark"></i></li>
                     <NavHashLink smooth to="/#home" onClick={HideMenu} className={`${isHome ? "text-cyan-400" : "text-black dark:text-white"}`}><li className='font-[700] uppercase hover:text-cyan-400 text-center mb-2 md:mb-0'>Home</li></NavHashLink>
                     <NavHashLink smooth to="/#about"onClick={HideMenu} className={`${isAbout ? "text-cyan-400" : "text-black dark:text-white"}`}><li className='font-[700] uppercase hover:text-cyan-400 text-center mb-2 md:mb-0'>About</li></NavHashLink>
