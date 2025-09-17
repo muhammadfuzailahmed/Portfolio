@@ -26,7 +26,7 @@ function Certificatecards() {
                 transition={{
                     duration: 0.5
                 }}
-                className='border-2 border-cyan-400 p-2 mb-2 h-[30vh] relative rounded-sm '>
+                className='border-2 border-cyan-400 p-2 mb-2 h-[35vh] relative rounded-sm '>
                     <h2 className='dark:text-white mb-2 text-center text-xl'><span className='text-blue-600'>{card.img}</span> {card.provider} &#xb7; {card.platform}</h2>
                     <hr className='bg-gray-700 h-1 my-1' />
                     <h1 className='dark:text-white font-bold text-lg mb-4 text-center'>{card.title}</h1>
