@@ -38,7 +38,7 @@ function Hero() {
   return (
     <>
     <div className='w-full md:h-screen h-[95vh] dark:bg-[#0d0e0e]'>
-        <div className='md:flex items-center justify-between md:px-40 md:pt-40 pt-10'>
+        <div className='md:flex items-center justify-between md:px-40 md:pt-30 pt-10'>
             {/* left */}
             <div className='md:w-[45vw] w-[90vw] md:m-0 m-auto text-center md:text-left'>
                 <h1 className='font-bold md:text-6xl text-4xl dark:text-white'>I'm <motion.span 
