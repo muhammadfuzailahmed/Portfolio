@@ -76,7 +76,7 @@ function Header() {
 
   return (
     <>
-        <nav className='flex items-center justify-between md:px-40 px-10 py-4 dark:bg-[#0d0e0e]'>
+        <nav className='flex items-center justify-between md:px-30 px-10 py-4 dark:bg-[#0d0e0e]'>
             <div className='flex items-center'>
                 <p className='md:hidden text-black dark:text-white relative right-5 text-2xl' onClick={HandleMenuClick}><i class="fa-solid fa-bars"></i></p>
                 <Link to="/"><h1 className='font-bold text-4xl dark:text-white'>Fuzail.</h1></Link>
