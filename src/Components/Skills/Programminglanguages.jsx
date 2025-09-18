@@ -1,0 +1,59 @@
+import React from 'react'
+import {motion} from 'motion/react'
+
+const prograamingLanguagesSkills = [
+    {
+        label: "C++",
+        completed: "90%"
+    },
+    {
+        label: "C#",
+        completed: "95%"
+    },
+    {
+        label: "JavaScript",
+        completed: "80%"
+    },
+    {
+        label: "Python",
+        completed: "70%"
+    }
+]
+
+function Programminglanguages() {
+   return (
+    <div className='w-full mt-8'>
+        {
+            prograamingLanguagesSkills.map(skill => (
+                <motion.div 
+                whileHover={{
+                // scale: 1.02,
+                cursor: "pointer",
+                backgroundColor: "#000000",
+                color: "#fff",
+                width: "40vw",
+                boxShadow: "5px 5px 5px 4px cyan"
+                }}
+                animate={{
+                    width: "30vw",
+                }}
+                transition={{
+                    duration: 0.45
+                }}
+                className='mt-3 p-3 rounded-sm w-[30vw] m-auto'>
+                    <div className='flex items-center justify-between'>
+                        <p className='dark:text-white font-bold'>{skill.label}</p>
+                        <p className='dark:text-white font-bold'>{skill.completed}</p>
+                    </div>
+                    <div className='mt-3'>
+                        <div className={`h-2 rounded-full bg-cyan-400`} style={{ width: skill.completed }}>
+                        </div>
+                    </div>
+                </motion.div>
+            ))
+        }   
+    </div>
+  )
+}
+
+export default Programminglanguages
