@@ -1,25 +1,28 @@
 import React, { useState } from 'react'
+import Webdevelopment from './Webdevelopment'
+import Programminglanguages from './Programminglanguages'
+import Extras from './Extras'
 
 const tabs = [
     {
-        id: "js",
-        label: "JavaScript"
+        id: "web",
+        label: "Web Development"
     },
     {
-        id: "react",
-        label: "React"
+        id: "programming",
+        label: "Programming Languages"
     },
     {
-        id: "Others",
-        label: "Others"
+        id: "extra",
+        label: "Extras"
     },
 ]
 
 
 function Skills() {
-    const [tab, setTab] = useState("js")
+    const [tab, setTab] = useState("web")
   return (
-    <div className='w-full h-screen dark:bg-[#0d0e0e]'>
+    <div className='w-full min-h-[120vh] dark:bg-[#0d0e0e]'>
         <h1 className='dark:text-white text-center text-5xl font-bold pt-10'>Skills</h1>
         <div className='w-40 h-2 bg-cyan-400 m-auto rounded-lg mt-2'></div>
         <div className='h-96 mt-10 w-[80vw] m-auto'>
@@ -31,9 +34,9 @@ function Skills() {
                 ))
             }
 
-            {tab === "js" && <div className='dark:text-white'>JavaScript content here</div>}
-            {tab === "react" && <div className='dark:text-white'>React content here</div>}
-            {tab === "Others" && <div className='dark:text-white'>Other content here</div>}
+            {tab === "web" && <Webdevelopment />}
+            {tab === "programming" && <Programminglanguages />}
+            {tab === "extra" && <Extras />}
         </div>
     </div>
   )
