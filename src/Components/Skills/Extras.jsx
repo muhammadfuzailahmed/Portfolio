@@ -28,16 +28,13 @@ function Extras() {
                 cursor: "pointer",
                 backgroundColor: "#000000",
                 color: "#fff",
-                width: "40vw",
+                width: "35vw",
                 boxShadow: "5px 5px 15px 4px cyan"
-                }}
-                animate={{
-                    width: "30vw",
                 }}
                 transition={{
                     duration: 0.45
                 }}
-                className='mt-3 p-3 rounded-sm w-[30vw] m-auto'>
+                className='mt-3 p-3 rounded-sm md:w-[30vw] m-auto dark:border-0 border-2 border-cyan-400'>
                     <div className='flex items-center justify-between'>
                         <p className='dark:text-white font-bold'>{skill.label}</p>
                         <p className='dark:text-white font-bold'>{skill.completed}</p>
