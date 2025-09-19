@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../Hero/Hero'
 import About from '../About/About'
 import Skills from '../Skills/Skills'
+import Project from '../Project/Project'
 
 function Maincontent() {
   return (
@@ -16,6 +17,10 @@ function Maincontent() {
 
     <section id='skills'>
         <Skills />
+    </section>
+
+    <section id='projects'>
+        <Project />
     </section>
     </>
   )
