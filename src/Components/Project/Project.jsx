@@ -2,6 +2,7 @@ import React from 'react'
 import Webimg from '../../assets/About/Webimg.png'
 import {motion} from 'motion/react'
 import Button from '../Button/Button'
+import { Link } from 'react-router-dom'
 
 
 function Project() {
@@ -120,17 +121,21 @@ function Project() {
                         <p className='dark:text-white mt-3 w-68 leading-none text-justify'>{project.shortDesc}</p>
                         <div className='my-5'>
                             {project.techSTack.map(t => (
-                                <span className='dark:text-white px-2 py-1 mx-1 bg-gray-600 rounded-sm'>{t}</span>
+                                <span className='dark:text-white px-2 py-1 mx-1 dark:bg-gray-600 bg-gray-400 rounded-sm'>{t}</span>
                             ))}
                         </div>
-                        <div className='text-left'>
+                        <div className='text-center'>
                         <Button title="More info" bg="transparent" bgHover="hover:text-cyan-400"/>
                         </div>
                         </div>
                     </motion.div>
                 ))
             }
-            <div className='absolute top-0 right-0'><Button title="Show more" bg="tranparent" bgHover="hover:text-cyan-400"/></div>            
+            <div className='absolute top-0 right-0'>
+                <Link to="/projects">
+                <Button title="Show more" bg="tranparent" bgHover="hover:text-cyan-400"/>
+                </Link>
+            </div>            
         </div>
     </div>
   )
