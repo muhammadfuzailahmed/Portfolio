@@ -16,12 +16,12 @@ function Projectid() {
             
         })
     }
-    // useEffect(() => {
-    //     window.scrollTo({top: 0,
-    //         left: 0,
-    //         behavior: "instant"
-    //     })
-    // }, [])
+    useEffect(() => {
+        window.scrollTo({top: 0,
+            left: 0,
+            behavior: "instant"
+        })
+    }, [])
     let {projectid} = useParams()
     const id = normalize(projectid)
     let project = Projects.find(p => normalize(p.title) === id) 
