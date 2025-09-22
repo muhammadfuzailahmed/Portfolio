@@ -10,6 +10,7 @@ import Certificatesbygoogle from './Components/Pages/Certificates/Certificatesby
  import { ToastContainer } from 'react-toastify';
 import Projects from './Components/Pages/Projects/Projects.jsx'
 import Projectid from './Components/Pages/Projectid/Projectid.jsx'
+import Contactform from './Components/Contact/Contactform.jsx'
 
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
@@ -30,6 +31,7 @@ createRoot(document.getElementById('root')).render(
       <Route index element={<Maincontent />}/>
       <Route path='certificates/meta' element={<Certificatesbymeta />}/>
       <Route path='certificates/google' element={<Certificatesbygoogle />}/>
+      <Route path='/contact' element={<Contactform />}/>
       </Route>
       <Route path='/projects' element={<Projects />} />
       <Route path='/projects/:projectid' element={<Projectid />} />
