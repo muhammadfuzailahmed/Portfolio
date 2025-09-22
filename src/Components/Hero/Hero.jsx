@@ -2,7 +2,7 @@ import React,{useEffect, useState} from 'react'
 import {motion} from 'motion/react'
 import Mainvideo from '../../assets/Mainvideo.mp4'
 import Button from '../Button/Button'
- import { toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 function Hero() {
     const [downloadSuccessfull, isDownloadSuccessfull] = useState(false)
