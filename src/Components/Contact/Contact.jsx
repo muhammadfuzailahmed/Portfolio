@@ -29,7 +29,7 @@ function Contact() {
                     <p className='my-5 dark:text-gray-300 text-xl text-center'>Tell me about your idea</p>
                     <div className='mt-4'>
                     <Link to="/contact">
-                    <Button title="Let's-get-in-touch" bg="bg-cyan-500" bgHover="hover:bg-transparent"/>
+                    <Button title="Let's-get-in-touch &#8594;" bg="bg-cyan-500" bgHover="hover:bg-transparent"/>
                     </Link>
                     
                     {isCopied ? <span onClick={CopyEmail} className='ml-3'><Button title="Copied! &#10003;" bg="transparent" bgHover="hover:bg-cyan-400"/></span> : <span onClick={CopyEmail} className='ml-3'><Button title="Email me" bg="transparent" bgHover="hover:bg-cyan-400"/></span>}
