@@ -28,18 +28,16 @@ function Contact() {
                     <h1 className='dark:text-white font-bold md:text-5xl text-3xl w-[100%] md:text-left text-center'>Let's work together on your next project!</h1>
                     <p className='my-5 dark:text-gray-300 text-xl text-center'>Tell me about your idea</p>
                     <div className='mt-4 md:text-left text-center'>
+                    <div className='md:flex items-center gap-4'>
+                    <div className='md:mb-0 mb-4'>
                     <Link to="/contact">
                     <Button title="Let's-get-in-touch &#8594;" bg="bg-cyan-500" bgHover="hover:bg-transparent"/>
                     </Link>
-                    
-                    {isCopied ? <span onClick={CopyEmail} className='md:ml-3'><Button title="Copied! &#10003;" bg="transparent" bgHover="hover:bg-cyan-400"/></span> : <span onClick={CopyEmail} className='md:ml-3'><Button title="Email me" bg="transparent" bgHover="hover:bg-cyan-400"/></span>}
+                    </div>
+                    {isCopied ? <span onClick={CopyEmail}><Button title="Copied! &#10003;" bg="transparent" bgHover="hover:bg-cyan-400"/></span> : <span onClick={CopyEmail}><Button title="Email me" bg="transparent" bgHover="hover:bg-cyan-400"/></span>}
+                    </div>
                     <div className='md:flex gap-4 mt-5'>
-                        <Link>
                             <p className='dark:text-white'><span><i class="fa-solid fa-clock"></i></span> Avg. respone: within 24 hrs &#xb7; Available for freelance/remote</p>
-                        </Link>
-                        <Link>
-                            <p className='dark:text-white md:mt-0 mt-3'><span><i class="fa-solid fa-envelope"></i></span> name.mf30@gmail.com</p>
-                        </Link>
                     </div>
                     </div>
                 </div>
