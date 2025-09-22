@@ -3,6 +3,7 @@ import {motion} from 'motion/react'
 import Mainvideo from '../../assets/Mainvideo.mp4'
 import Button from '../Button/Button'
 import { toast } from 'react-toastify';
+import { NavHashLink } from 'react-router-hash-link';
 
 function Hero() {
     const [downloadSuccessfull, isDownloadSuccessfull] = useState(false)
@@ -22,14 +23,13 @@ function Hero() {
 
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'My_resume.pdf'; // suggested filename
+        a.download = 'My_resume.pdf';
         document.body.appendChild(a);
         a.click();
         a.remove();
 
         URL.revokeObjectURL(url);
     } catch (e) {
-        // Fallback: open in a new tab (user can “Share/Save”)
         window.open('/Resume.pdf', '_blank', 'noopener,noreferrer');
     }
         isDownloadSuccessfull(true)
@@ -58,7 +58,9 @@ function Hero() {
                         </div>
                     </div>
                     <div>
+                    <NavHashLink smooth to="/#contact">
                     <Button title="Let's Connect"  bg="bg-cyan-500" bgHover="hover:bg-transparent"/>
+                    </NavHashLink>
                     </div>
                 </div>
             </div>
