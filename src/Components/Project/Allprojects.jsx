@@ -24,15 +24,15 @@ function Allprojects() {
             transition={{
             duration: 0.6
             }}
-            className='w-[90vw] m-auto flex items-center justify-between px-5 py-8 mt-8 rounded-md border-2 border-cyan-400'>
+            className='w-[90vw] m-auto md:flex items-center justify-between px-5 py-8 mt-8 rounded-md border-2 border-cyan-400'>
                 <div>
-                    <h1 className='dark:text-white font-bold text-2xl'>{p.title}</h1>
-                    <p className='dark:text-white w-[90%] mt-1'>{p.shortDesc}</p>
-                    <p className='mt-3 relative right-1'>{p.techSTack.map(tech => (
+                    <h1 className='dark:text-white md:text-left text-center font-bold text-2xl'>{p.title}</h1>
+                    <p className='dark:text-white w-[90%] md:mt-1 mt-2 md:mb-2 mb-2 md:text-left text-justify'>{p.shortDesc}</p>
+                    <p className='md:mt-3 mt-4 relative right-1'>{p.techSTack.map(tech => (
                         <span className='dark:text-white ml-1 px-1.5 py-1 dark:bg-gray-600 bg-gray-400 rounded-sm'>{tech}</span>
                     ))}</p>
                 </div>
-                <div>
+                <div className='md:mt-0 mt-5 md:text-left text-center'>
                     <Link to={`/projects/${encodeURIComponent(p.title)}`}>
                     <Button title="View Project" bg="transparent" bgHover="hover:text-cyan-400" />
                     </Link>
