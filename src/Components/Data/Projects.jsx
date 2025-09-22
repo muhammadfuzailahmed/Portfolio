@@ -30,7 +30,7 @@ export const Projects = [
         timeLine: [
             {
                 duration: "1 day",
-                isCompleted: true,
+                isCompleted: "True",
                 status: "Live"
             }
         ],
@@ -62,7 +62,7 @@ export const Projects = [
         timeLine: [
             {
                 duration: "2 days",
-                isCompleted: true,
+                isCompleted: "True",
                 status: "Live"
             }
         ],
@@ -94,7 +94,7 @@ export const Projects = [
         timeLine: [
             {
                 duration: "1 day",
-                isCompleted: true,
+                isCompleted: "True",
                 status: "Live"
             }
         ],
@@ -126,7 +126,7 @@ export const Projects = [
         timeLine: [
             {
                 duration: "1 day",
-                isCompleted: true,
+                isCompleted: "True",
                 status: "Live"
             }
         ],
@@ -158,7 +158,7 @@ export const Projects = [
         timeLine: [
             {
                 duration: "3 weeks",
-                isCompleted: true,
+                isCompleted: "True",
                 status: "Live"
             }
         ],
@@ -190,7 +190,7 @@ export const Projects = [
         timeLine: [
             {
                 duration: "3 weeks",
-                isCompleted: true,
+                isCompleted: "True",
                 status: "Live"
             }
         ],
@@ -221,7 +221,7 @@ export const Projects = [
         timeLine: [
             {
                 duration: "3 weeks",
-                isCompleted: true,
+                isCompleted: "True",
                 status: "Live"
             }
         ],
