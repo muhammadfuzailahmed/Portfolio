@@ -3,6 +3,7 @@ import Webimg from '../../assets/About/Webimg.png'
 import {motion} from 'motion/react'
 import Button from '../Button/Button'
 import { Link } from 'react-router-dom'
+import Loginpage from '../../assets/Projects/JavaScript/SMS/Loginpage.png'
 
 
 function Project() {
@@ -10,7 +11,7 @@ function Project() {
         {
         language: "JavaScript",
         video: "video",
-        img: Webimg,
+        img: Loginpage,
         title: "Student Management System",
         shortDesc: "A web application with an admin panel for managing students and courses, and a student panel for course enrollment, fee management, and account management.",
         fullDesc: [
@@ -38,10 +39,10 @@ function Project() {
         ]
         },
         {
-        language: "JavaScript",
+        language: "ReactJS",
         video: "video",
         img: Webimg,
-        title: "Student Management System",
+        title: "Ecommerce Store",
         shortDesc: "A web application with an admin panel for managing students and courses, and a student panel for course enrollment, fee management, and account management.",
         fullDesc: [
             "This project is a comprehensive web application designed to manage students and courses through a role-based access system. The admin panel allows administrators to add, update, remove, and view students and courses, as well as search and export all data. Admins can also manage user credentials and perform CRUD operations on courses. The student panel enables users to enroll in courses, view their enrolled courses, and check their fees based on the credit hours of the selected courses. Students can also reset their passwords and logout securely.",
@@ -50,11 +51,11 @@ function Project() {
         timeLine: [
             {
                 duration: "3 weeks",
-                isCompleted: true,
+                isCompleted: "True",
                 status: "Live"
             }
         ],
-        techSTack: ["HTML5", "CSS3", "JavaScript"],
+        techSTack: ["React", "VIte", "Tailwind CSS"],
         keyFeatures: [
             "Admin Panel – Add, update, remove students & courses, view/export all data, search courses.",
             "Student Panel – Enroll in courses, view enrolled courses, check fees (calculated on basis of credit hours), search courses, reset password, and logout.",
@@ -68,10 +69,10 @@ function Project() {
         ]
         },
         {
-        language: "JavaScript",
+        language: "C#",
         video: "video",
         img: Webimg,
-        title: "Student Management System",
+        title: "Banking Management System",
         shortDesc: "A web application with an admin panel for managing students and courses, and a student panel for course enrollment, fee management, and account management.",
         fullDesc: [
             "This project is a comprehensive web application designed to manage students and courses through a role-based access system. The admin panel allows administrators to add, update, remove, and view students and courses, as well as search and export all data. Admins can also manage user credentials and perform CRUD operations on courses. The student panel enables users to enroll in courses, view their enrolled courses, and check their fees based on the credit hours of the selected courses. Students can also reset their passwords and logout securely.",
@@ -79,12 +80,12 @@ function Project() {
         ],
         timeLine: [
             {
-                duration: "3 weeks",
-                isCompleted: true,
+                duration: "4 weeks",
+                isCompleted: "True",
                 status: "Live"
             }
         ],
-        techSTack: ["HTML5", "CSS3", "JavaScript"],
+        techSTack: ["C#", "SQL", "Web Forms"],
         keyFeatures: [
             "Admin Panel – Add, update, remove students & courses, view/export all data, search courses.",
             "Student Panel – Enroll in courses, view enrolled courses, check fees (calculated on basis of credit hours), search courses, reset password, and logout.",
@@ -102,7 +103,7 @@ function Project() {
     <div className='w-full min-h-screen dark:bg-[#0d0e0e]'>
         <h1 className='font-bold text-center dark:text-white text-5xl pt-10'>Projects</h1>
         <div className='w-40 h-2 bg-cyan-400 m-auto rounded-lg my-2'></div>
-        <div className='w-[80vw] mt-12 m-auto md:flex items-center justify-start gap-4 relative'>
+        <div className='w-[80vw] mt-12 m-auto md:flex items-center justify-around gap-4 relative'>
             {
                 latestProjects.map(project => (
                     <motion.div
@@ -114,8 +115,8 @@ function Project() {
                     transition={{
                         duration: 0.5
                     }}
-                    className='border-2 border-cyan-400 rounded-sm mb-3'>   
-                        <img className='w-[100%] h-[180px] object-cover' src={project.img} alt="Img" />
+                    className='border-2 border-cyan-400 rounded-sm mb-3 w-80'>   
+                        <img className='w-[100%] h-[180px] bg-center' src={project.img} alt="Img" />
                         <div className='p-2'>
                         <h1 className='font-bold text-xl mt-3 dark:text-white'>{project.title}</h1>
                         <p className='dark:text-white mt-3 w-68 leading-none text-justify'>{project.shortDesc}</p>
@@ -124,19 +125,21 @@ function Project() {
                                 <span className='dark:text-white px-2 py-1 mx-1 dark:bg-gray-600 bg-gray-400 rounded-sm'>{t}</span>
                             ))}
                         </div>
-                        <div className='text-center'>
-                        <Button title="More info" bg="transparent" bgHover="hover:text-cyan-400"/>
+                        <div className='text-left'>
+                        <Link to={`/projects/${project.title}`}>
+                        <p className='text-cyan-400 text-sm'>Read more <span><i class="fa-solid fa-arrow-right"></i></span></p>
+                        </Link>
                         </div>
                         </div>
                     </motion.div>
                 ))
             }
-            <div className='absolute top-0 right-0'>
+        </div>
+            <div className='text-center mt-4'>
                 <Link to="/projects">
                 <Button title="Show more" bg="tranparent" bgHover="hover:text-cyan-400"/>
                 </Link>
             </div>            
-        </div>
     </div>
   )
 }
