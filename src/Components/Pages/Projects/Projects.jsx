@@ -1,6 +1,8 @@
 import React,{useState} from 'react'
 import Allprojects from '../../Project/Allprojects'
 import Javascriptprojects from '../../Project/Javascriptprojects'
+import { Link } from 'react-router-dom'
+import { NavHashLink } from 'react-router-hash-link';
 
 function Projects() {
     const [tab, setTab] = useState("showall")
@@ -26,8 +28,10 @@ function Projects() {
 
   return (
     <div className='w-full min-h-screen dark:bg-[#0d0e0e]'>
-        <div className='flex items-center justify-center'>
-            <ul className='flex gap-6 my-5'>
+        <NavHashLink to="/">
+            <p className='dark:text-white transition-all hover:text-gray-500 cursor-pointer ml-[4vw] pt-5 '><span className='mr-5'><i class="fa-solid fa-arrow-left"></i></span> Back</p></NavHashLink>
+        <div className='md:mt-0 mt-3 flex items-center justify-center'>
+            <ul className='flex md:gap-6 gap-4 mb-5'>
                 {tabs.map(t => (
                     <li key={t.id}
                     onClick={() => setTab(t.id)}
