@@ -12,12 +12,17 @@ function Footer() {
     return () => clearInterval(timer);
   }, [])
 
-  return (
-    <div className='w-full h-[60vh] dark:text-white dark:bg-[#0d0e0e] relative'>
-      <hr className='bg-gray-400'/>
-      <div className='w-[80vw] h-96 m-auto flex items-center justify-between px-10'>
+  function getTime(date = new Date()) {
+    const hours = date.getHours();
+    return hours < 12 ? "AM" : "PM"
+  }
 
-        <div className=' w-[50%]'>
+  return (
+    <div className='w-full dark:text-white dark:bg-[#0d0e0e] pt-5'>
+      <hr className='bg-gray-400 mb-8'/>
+      <div className='md:w-[80vw] m-auto md:flex items-center justify-between px-10 '>
+
+        <div className='md:w-[50%]'>
             <NavHashLink smooth to="/#home">
               <h1 className='dark:text-white font-bold text-4xl'>Fuzail.</h1>
             </NavHashLink>
@@ -33,10 +38,10 @@ function Footer() {
                   <p className=' inline-block p-2 rounded-sm dark:bg-gray-500 ml-2'><i className="fa-brands fa-linkedin-in text-2xl"></i></p>
                 </Link>
               </div>
-              <p>&#169; Fuzail | All rights reserved</p>
+              <p className='mb-10'>&#169; Fuzail | All rights reserved</p>
         </div>
 
-        <div>
+        <div className='mb-5'>
           <div className='flex items-center gap-10'>
             <ul className='dark:text-white'>
               <li className='font-bold mb-1'>Me</li>
@@ -63,16 +68,17 @@ function Footer() {
 
       </div>
 
-    <div className='w-full absolute bottom-0 left-0 flex items-center justify-between px-5 py-3 border-t-1 border-t-gray-500'>
+    <div className='w-full flex items-center justify-between px-5 py-3 border-t-1 border-t-gray-500 '>
+      <div className='md:flex items-center justify-between w-[60%]'>
       <div>
-        <p className='dark:text-white'>Based in Karachi, Pakistan.</p>
+        <p className='dark:text-white md:mb-0 mb-2'>Based in Karachi, Pakistan.</p>
       </div>
 
       <div>
-        <p className='dark:text-white'>Local time: {time}</p>
+        <p className='dark:text-white md:text-center'>Local time: {time} {getTime()}</p>
       </div>
-
-      <div>
+    </div>
+      <div className='w-[50%] text-right'>
         <Link to="/contact">
             <Button title="Let's-get-in-touch &#8594;" bg="transparent" bgHover="hover:bg-cyan-400"/>
         </Link>
