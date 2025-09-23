@@ -4,10 +4,12 @@ import About from '../About/About'
 import Skills from '../Skills/Skills'
 import Project from '../Project/Project'
 import Contact from '../Contact/Contact'
+import Scrolltotop from '../Scrolltotop/Scrolltotop'
 
 function Maincontent() {
   return (
     <>
+    <Scrolltotop />
     <section id='home'>
         <Hero />
     </section>
