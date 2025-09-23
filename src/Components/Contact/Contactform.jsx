@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { toast } from 'react-toastify';
 
 function Contactform() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   const onSubmit = async (event) => {
     event.preventDefault();
+    if(!name || !email || !message) {
+      toast.error("Enter all fields!")
+      return
+    }
     const formData = new FormData(event.target);
 
     formData.append("access_key", "e859bbf1-d4f4-4f90-a67f-525d0570085d");
@@ -21,18 +30,36 @@ function Contactform() {
 
     if (res.success) {
       console.log("Success", res);
+      toast.success("Submitted Successfully!");
+      setName("")
+      setEmail("")
+      setMessage("")
     }
   };
 
   return (
     <>
-    <div className='w-full h-[70vh] dark:bg-[#0d0e0e]'>
+    <div className='w-full h-[80vh] dark:bg-[#0d0e0e]'>
+      <div className='text-center'>
+        <h1 className='dark:text-white font-bold text-4xl pt-10'>Say Hello!</h1>
+        <div className='w-48 h-2 bg-cyan-400 m-auto rounded-full mb-5 mt-1'></div>
+        <div className='text-center mb-6'>
+        <p className='dark:text-gray-400'>I'd love to collaborate or discuss opportunities.</p>
+        <p className='dark:text-gray-400'>Drop me a message below.</p>
+        </div>
       <form onSubmit={onSubmit}>
-        <input type="text" name="name" className='w-96 border-2 border-white px-4 py-2 rounded-md dark:placeholder:text-white' placeholder='Enter name'/>
-        <input type="email" name="email" className='w-96 border-2 border-white px-4 py-2 rounded-md dark:placeholder:text-white' placeholder='Enter email'/>
-        <textarea name="message" className='w-96 border-2 border-white px-4 py-2 rounded-md dark:placeholder:text-white' placeholder='Enter name'></textarea>
-        <button type="submit" className='border-2 border-white px-4 py-2 rounded-md dark:text-white'>Submit Form</button>
+        <div >
+        <input value={name} onChange={(e) => setName(e.target.value)} type="text" name="name" className='w-96 border-2 dark:border-white border-black px-4 py-2 rounded-md dark:placeholder:text-gray-400 placeholder:text-black text-white outline-none focus:border-cyan-400 transition-all' placeholder='Enter name'/>
+        </div>
+        <div className='my-8'>
+        <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="email" className='w-96 border-2 dark:border-white border-black px-4 py-2 rounded-md dark:placeholder:text-gray-400 placeholder:text-black text-white outline-none focus:border-cyan-400 transition-all' placeholder='Enter email'/>
+        </div>
+        <div className='my-8'>
+        <textarea value={message} onChange={(e) => setMessage(e.target.value)} name="message" rows={6} className='w-96 border-2 dark:border-white px-4 py-2 rounded-md dark:placeholder:text-gray-400 placeholder:text-black border-black text-white outline-none focus:border-cyan-400 transition-all' placeholder='Enter message'></textarea>
+        </div>
+        <button type="submit" className='border-3 border-cyan-400 px-3 py-1.5 w-46 rounded-md text-cyan-400 cursor-pointer font-bold hover:bg-cyan-500 hover:text-white'>Submit Form</button>
       </form>
+      </div>
       </div>
       </>
   );
