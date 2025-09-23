@@ -46,9 +46,9 @@ function Contactform() {
 
   return (
     <>
-    <div className='w-full h-screen dark:bg-[#0d0e0e]'>
+    <div className='w-full h-[80vh] dark:bg-[#0d0e0e]'>
       <div className='text-center'>
-        <h1 className='dark:text-white font-bold text-4xl pt-15'>Say Hello!</h1>
+        <h1 className='dark:text-white font-bold text-4xl pt-10'>Say Hello!</h1>
         <div className='w-48 h-2 bg-cyan-400 m-auto rounded-full mb-5 mt-1'></div>
         <div className='text-center mb-6'>
         <p className='dark:text-gray-400'>I'd love to collaborate or discuss opportunities.</p>
