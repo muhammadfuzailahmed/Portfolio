@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function Contact() {
     const [isCopied, setIsCopied] = useState(false)
      const CopyEmail = async () => {
-     const Email = "name.mf30@gmailcom";
+     const Email = "mfuzail.ahmed30@gmailcom";
      await navigator.clipboard.writeText(Email)
      setIsCopied(true) 
         setTimeout(() => {
