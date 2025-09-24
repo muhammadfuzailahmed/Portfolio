@@ -24,11 +24,10 @@ function Extras() {
             ExtraSkills.map(skill => (
                 <motion.div 
                 whileHover={{
-                // scale: 1.02,
                 cursor: "pointer",
                 backgroundColor: "#000000",
                 color: "#fff",
-                width: "35vw",
+                scale: 1.10,
                 boxShadow: "5px 5px 15px 4px cyan"
                 }}
                 transition={{

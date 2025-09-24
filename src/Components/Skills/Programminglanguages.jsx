@@ -31,7 +31,7 @@ function Programminglanguages() {
                 cursor: "pointer",
                 backgroundColor: "#000000",
                 color: "#fff",
-                width: "35vw",
+                scale: 1.10,
                 boxShadow: "5px 5px 5px 4px cyan"
                 }}
                 transition={{

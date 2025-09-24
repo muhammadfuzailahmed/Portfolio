@@ -39,12 +39,9 @@ function Webdevelopment() {
                 cursor: "pointer",
                 backgroundColor: "#000000",
                 color: "#fff",
-                width: "35vw",
+                scale: 1.10,
                 boxShadow: "5px 5px 15px 4px cyan"
                 }}
-                // animate={{
-                //     width: "50vw"
-                // }}
                 transition={{
                     duration: 0.45
                 }}
