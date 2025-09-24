@@ -17,6 +17,13 @@ function Footer() {
     return hours < 12 ? "AM" : "PM"
   }
 
+  function ScrollTo() {
+    window.ScrollTO({
+      top: 0,
+      behavior: "instant"
+    })
+  }
+
   return (
     <div className='w-full dark:text-white dark:bg-[#0d0e0e] pt-5'>
       <hr className='bg-gray-400 mb-8'/>
@@ -78,8 +85,8 @@ function Footer() {
         <p className='dark:text-white md:text-center'>Local time: {time} {getTime()}</p>
       </div>
     </div>
-      <div className='w-[50%] text-right'>
-        <Link to="/contact">
+      <div className='w-[50%] text-right' >
+        <Link to="/contact" onClick={ScrollTo}>
             <Button title="Let's-get-in-touch &#8594;" bg="transparent" bgHover="hover:bg-cyan-400"/>
         </Link>
       </div>
