@@ -12,11 +12,6 @@ function Footer() {
     return () => clearInterval(timer);
   }, [])
 
-  function getTime(date = new Date()) {
-    const hours = date.getHours();
-    return hours < 12 ? "AM" : "PM"
-  }
-
   function ScrollTo() {
     window.ScrollTO({
       top: 0,
@@ -82,13 +77,15 @@ function Footer() {
       </div>
 
       <div>
-        <p className='dark:text-white md:text-center'>Local time: {time} {getTime()}</p>
+        <p className='dark:text-white md:text-center'>Local time: {time}</p>
       </div>
     </div>
       <div className='w-[50%] text-right' >
-        <Link to="/contact" onClick={ScrollTo}>
+        <div onClick={ScrollTo}>
+        <Link to="/contact">
             <Button title="Let's-get-in-touch &#8594;" bg="transparent" bgHover="hover:bg-cyan-400"/>
         </Link>
+        </div>
       </div>
 
     </div>
