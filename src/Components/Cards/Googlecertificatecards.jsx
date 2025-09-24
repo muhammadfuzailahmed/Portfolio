@@ -3,10 +3,15 @@ import Button from '../Button/Button'
 import {Link} from 'react-router-dom'
 import {motion} from 'motion/react'
 import Googlecertificates from '../Data/Googlecertificates.jsx'
+import { NavHashLink } from 'react-router-hash-link';
+
 
 function Certificatecards() {
   return (
-    <div className='w-full dark:bg-[#0d0e0e]'>
+    <div className='w-full dark:bg-[#0d0e0e] pb-5'>
+        <NavHashLink smooth to="/#about" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
+            <p className='dark:text-white transition-all hover:text-gray-500 cursor-pointer ml-10'><span className='mr-3'><i class="fa-solid fa-arrow-left"></i></span> Back</p>
+        </NavHashLink>
             <h1 className='text-center font-bold text-4xl dark:text-white pt-10'>Google Certificates</h1>
             <div className='w-48 h-2 bg-cyan-400 m-auto rounded-lg mt-2 mb-8'></div>
         <div className='w-[80vw] m-auto grid md:grid-cols-4 gap-5 '>
