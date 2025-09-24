@@ -51,8 +51,8 @@ function Hero() {
                 }}
                 className='dark:text-cyan-400 inline-block'>Fuzail</motion.span>  <div>Frontend Developer & React Enthusiast</div></h1>
                 <p className='dark:text-white md:mt-10 mt-5 md:w-[35vw] text-justify md:font-[600]'><span className='relative bottom-1.5 right-0.5'><i class="fa-solid fa-quote-left"></i></span>Built a feature-rich e-commerce demo using React and loalStorage – with login/signup, product pages, Filters, cart totals, checkout, and order history. Passionate about clean UI, responsive design, actively expanding my skills through D3A and Android development in my upcoming semester.<span className='relative bottom-1.5 left-0.5'><i class="fa-solid fa-quote-right"></i></span></p>
-                <div className='flex items-center gap-4 mt-5 md:mb-0 mb-5'>
-                    <div>
+                <div className='md:flex items-center gap-4 mt-5 md:mb-0 mb-5'>
+                    <div className='md:mb-0 mb-3'>
                         <div onClick={DownloadResume}>
                     <Button title="Download Resume" bg="tranparent" bgHover="hover:bg-cyan-400"/>
                         </div>
