@@ -22,7 +22,7 @@ function Scrolltotop() {
         transition={{
             duration: 0.3
         }}
-    className='dark:text-white font-bold fixed bottom-10 right-5 text-3xl  border-2 border-cyan-400 rounded-[50%] p-5 dark:bg-[#0d0e0e] z-10'>
+    className='dark:text-white font-bold fixed bottom-15 right-5 text-3xl  border-2 border-cyan-400 rounded-[50%] p-5 dark:bg-[#0d0e0e] z-10'>
         <i className="fa-solid fa-angle-up"></i>
     </motion.p>
     </>
