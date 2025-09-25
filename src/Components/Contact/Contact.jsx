@@ -20,12 +20,12 @@ function Contact() {
         <div className='border-1 border-cyan-400 rounded-sm w-[80vw] m-auto py-8 shadow-lg shadow-cyan-400 hover:shadow-xl hover:cursor-pointer'>
             <h1 className='dark:text-white text-center font-bold text-5xl'>Contact</h1>
             <div className='w-52 h-2 bg-cyan-400 m-auto rounded-lg mt-3 mb-12'></div>
-            <div className='md:flex items-center justify-between px-5'>
+            <div className='md:flex items-center justify-between px-5 w-[80vw]'>
                 <div>
                     <img className=' w-[200px] rounded-3xl border-2 border-cyan-400 m-auto md:mb-0 mb-5' src={contact} alt="" />
                 </div>
-                <div className='w-[75%]'>
-                    <h1 className='dark:text-white font-bold md:text-5xl text-3xl w-[80%] md:text-left text-center'>Let's work together on your next project!</h1>
+                <div className='md:w-[75%]'>
+                    <h1 className='dark:text-white font-bold md:text-5xl text-3xl md:w-[80%] md:text-left text-center'>Let's work together on your next project!</h1>
                     <p className='my-5 dark:text-gray-300 text-xl text-center'>Tell me about your idea</p>
                     <div className='mt-4 md:text-left text-center'>
                     <div className='md:flex items-center gap-4'>
