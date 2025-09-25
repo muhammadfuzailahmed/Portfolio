@@ -31,13 +31,13 @@ function Footer() {
               <p className='dark:text-white my-4 md:text-justify text-center'>Front-End Developer | JavaScript & React Developer | Building projects to become a Full-Stack Developer.</p>
               <div className='mb-4 md:text-left text-center'>
                 <Link to="https://github.com/muhammadfuzailahmed">
-                  <p className=' inline-block p-2 rounded-sm dark:bg-gray-500'><i className="fa-brands fa-github text-2xl"></i></p>
+                  <p className=' inline-block p-2 rounded-sm border-2 border-cyan-600 hover:border-cyan-400 transition-all'><i className="fa-brands fa-github text-2xl"></i></p>
                 </Link>
                 <Link to="https://www.instagram.com/muhammad_fuzail_30/">
-                  <p className=' inline-block p-2 rounded-sm dark:bg-gray-500 ml-2'><i className="fa-brands fa-instagram text-2xl"></i></p>
+                  <p className=' inline-block p-2 rounded-sm border-2 border-cyan-600 hover:border-cyan-400 transition-all ml-2'><i className="fa-brands fa-instagram text-2xl"></i></p>
                 </Link>
                 <Link to="https://www.linkedin.com/in/mfuzailahmed/">
-                  <p className=' inline-block p-2 rounded-sm dark:bg-gray-500 ml-2'><i className="fa-brands fa-linkedin-in text-2xl"></i></p>
+                  <p className=' inline-block p-2 rounded-sm border-2 border-cyan-600 hover:border-cyan-400 transition-all ml-2'><i className="fa-brands fa-linkedin-in text-2xl"></i></p>
                 </Link>
               </div>
               <p className='mb-10 md:text-left text-center'>&#169; Fuzail | All rights reserved</p>
