@@ -1,6 +1,6 @@
 import {useEffect} from 'react'
 import Button from '../Button/Button'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import {motion} from 'motion/react'
 import Metacertificates from '../Data/Metacertificates'
 import { NavHashLink } from 'react-router-hash-link';
@@ -15,8 +15,8 @@ function Certificatecards() {
     }, [])
   return (
     <div className='w-full dark:bg-[#0d0e0e] pb-5'>
-            <NavHashLink smooth to="/#about" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
-                <p className='dark:text-white transition-all hover:text-gray-500 cursor-pointer ml-10'><span className='mr-3'><i class="fa-solid fa-arrow-left"></i></span> Back</p>
+            <NavHashLink to="/#about" scroll={el => el.scrollIntoView({ top: 100 })}>
+                <p  className='dark:text-white transition-all hover:text-gray-500 cursor-pointer ml-10'><span className='mr-3'><i class="fa-solid fa-arrow-left"></i></span> Back</p>
             </NavHashLink>
             <h1 className='text-center font-bold text-4xl dark:text-white pt-8'>Meta Certificates</h1>
             <div className='w-48 h-2 bg-cyan-400 m-auto rounded-lg mt-2 mb-8'></div>

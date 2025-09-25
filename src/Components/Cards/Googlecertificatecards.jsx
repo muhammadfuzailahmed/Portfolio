@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Button from '../Button/Button'
 import {Link} from 'react-router-dom'
 import {motion} from 'motion/react'
@@ -7,6 +7,12 @@ import { NavHashLink } from 'react-router-hash-link';
 
 
 function Certificatecards() {
+    useEffect(() => {
+            window.scrollTo({top: 0,
+                left: 0,
+                behavior: "instant"
+            })
+        }, [])
   return (
     <div className='w-full dark:bg-[#0d0e0e] pb-5'>
         <NavHashLink smooth to="/#about" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
