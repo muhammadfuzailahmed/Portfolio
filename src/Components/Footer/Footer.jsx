@@ -26,10 +26,10 @@ function Footer() {
 
         <div className='md:w-[50%]'>
             <NavHashLink smooth to="/#home">
-              <h1 className='dark:text-white font-bold text-4xl'>Fuzail.</h1>
+              <h1 className='dark:text-white font-bold text-4xl md:text-left text-center'>Fuzail.</h1>
             </NavHashLink>
-              <p className='dark:text-white my-4 text-justify'>Built a feature-rich e-commerce demo using React and loalStorage – with login/signup, product pages, Filters, cart totals, checkout, and order history. Passionate about clean UI, responsive design, actively expanding my skills through D3A and Android development in my upcoming semester.</p>
-              <div className='mb-4'>
+              <p className='dark:text-white my-4 md:text-justify text-center'>Front-End Developer | JavaScript & React Developer | Building projects to become a Full-Stack Developer.</p>
+              <div className='mb-4 md:text-left text-center'>
                 <Link to="https://github.com/muhammadfuzailahmed">
                   <p className=' inline-block p-2 rounded-sm dark:bg-gray-500'><i className="fa-brands fa-github text-2xl"></i></p>
                 </Link>
@@ -40,44 +40,47 @@ function Footer() {
                   <p className=' inline-block p-2 rounded-sm dark:bg-gray-500 ml-2'><i className="fa-brands fa-linkedin-in text-2xl"></i></p>
                 </Link>
               </div>
-              <p className='mb-10'>&#169; Fuzail | All rights reserved</p>
+              <p className='mb-10 md:text-left text-center'>&#169; Fuzail | All rights reserved</p>
         </div>
-
+        <div></div>
         <div className='mb-5'>
-          <div className='flex items-center gap-10'>
+          <div className='md:flex items-center gap-10'>
+            <div className='flex gap-10'>
             <ul className='dark:text-white'>
-              <li className='font-bold mb-1'>Me</li>
+              <h2 className='font-bold mb-1.5'>Me</h2>
               <li className='dark:text-gray-300'>Project</li>
               <li className='dark:text-gray-300'>Skills</li>
               <li className='dark:text-gray-300'>About</li>
             </ul>
 
           <ul className='dark:text-white'>
-              <li className='font-bold mb-1'>Links</li>
+              <h2 className='font-bold mb-1.5'>Links</h2>
               <li className='dark:text-gray-300'>Home</li>
               <li className='dark:text-gray-300'>Resume</li>
               <li className='dark:text-gray-300'>Source code</li>
             </ul>
-
+          </div>
+          <div className='md:mt-0 mt-5'>
             <ul className='dark:text-white'>
-              <li className='font-bold mb-1'>Contacts</li>
+              <h2 className='font-bold mb-1.5'>Contacts</h2>
               <li className='dark:text-gray-300'>Email</li>
               <li className='dark:text-gray-300'>Instagram</li>
               <li className='dark:text-gray-300'>LinkedIn</li>
             </ul>
+            </div>
       </div>
         </div>
 
       </div>
 
     <div className='w-full flex items-center justify-between px-5 py-3 border-t-1 border-t-gray-500 '>
-      <div className='md:flex items-center justify-between w-[60%]'>
+      <div className='md:flex items-center justify-between w-[45%]'>
       <div>
-        <p className='dark:text-white md:mb-0 mb-2'>Based in Karachi, Pakistan.</p>
+        <p className='dark:text-white md:mb-0 mb-2 text-sm'>Based in Karachi, Pakistan.</p>
       </div>
 
       <div>
-        <p className='dark:text-white md:text-center'>Local time: {time}</p>
+        <p className='dark:text-white md:text-center text-sm'>Local time: {time}</p>
       </div>
     </div>
       <div className='w-[50%] text-right' >
