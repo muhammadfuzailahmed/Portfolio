@@ -7,12 +7,12 @@ import { NavHashLink } from 'react-router-hash-link';
 
 function Hero() {
     const [downloadSuccessfull, isDownloadSuccessfull] = useState(false)
-    useEffect(() => {
-            window.scrollTo({top: 0,
-                left: 0,
-                behavior: "instant"
-            })
-        }, [])
+    // useEffect(() => {
+    //         window.scrollTo({top: 0,
+    //             left: 0,
+    //             behavior: "instant"
+    //         })
+    //     }, [])
 
     async function DownloadResume() {
         try {
