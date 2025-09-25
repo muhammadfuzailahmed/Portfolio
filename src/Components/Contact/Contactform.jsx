@@ -60,13 +60,13 @@ function Contactform() {
         </div>
       <form onSubmit={onSubmit}>
         <div >
-        <input value={name} onChange={(e) => setName(e.target.value)} type="text" name="name" className='w-96 border-2 dark:border-white border-black px-4 py-2 rounded-md dark:placeholder:text-gray-400 placeholder:text-black text-white outline-none focus:border-cyan-400 transition-all' placeholder='Enter name'/>
+        <input value={name} onChange={(e) => setName(e.target.value)} type="text" name="name" className='w-96 border-2 dark:border-white border-black px-4 py-2 rounded-md dark:placeholder:text-gray-400 placeholder:text-black dark:text-white outline-none focus:border-cyan-400 transition-all' placeholder='Enter name'/>
         </div>
         <div className='my-8'>
-        <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="email" className='w-96 border-2 dark:border-white border-black px-4 py-2 rounded-md dark:placeholder:text-gray-400 placeholder:text-black text-white outline-none focus:border-cyan-400 transition-all' placeholder='Enter email'/>
+        <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="email" className='w-96 border-2 dark:border-white border-black px-4 py-2 rounded-md dark:placeholder:text-gray-400 placeholder:text-black dark:text-white outline-none focus:border-cyan-400 transition-all' placeholder='Enter email'/>
         </div>
         <div className='my-8'>
-        <textarea value={message} onChange={(e) => setMessage(e.target.value)} name="message" rows={6} className='w-96 border-2 dark:border-white px-4 py-2 rounded-md dark:placeholder:text-gray-400 placeholder:text-black border-black text-white outline-none focus:border-cyan-400 transition-all' placeholder='Enter message'></textarea>
+        <textarea value={message} onChange={(e) => setMessage(e.target.value)} name="message" rows={6} className='w-96 border-2 dark:border-white px-4 py-2 rounded-md dark:placeholder:text-gray-400 placeholder:text-black border-black dark:text-white outline-none focus:border-cyan-400 transition-all' placeholder='Enter message'></textarea>
         </div>
         <button type="submit" className='border-3 border-cyan-400 px-3 py-1.5 w-46 rounded-md text-cyan-400 cursor-pointer font-bold hover:bg-cyan-500 hover:text-white'>Submit Form</button>
       </form>
