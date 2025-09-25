@@ -16,7 +16,6 @@ function Scrolltotop() {
     whileHover={{
             scale: 1.05,
             cursor: "pointer",
-            color: "#fff",
             boxShadow: "0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan"
         }}
         transition={{
