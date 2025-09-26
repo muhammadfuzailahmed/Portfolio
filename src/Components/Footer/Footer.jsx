@@ -44,7 +44,7 @@ function Footer() {
         </div>
         <div></div>
         <div className='mb-5'>
-          <div className='md:flex items-center gap-10'>
+          <div className='md:flex items-center gap-10 ml-5'>
             <div className='flex gap-10'>
             <ul className='dark:text-white'>
               <h2 className='font-bold mb-1.5'>Me</h2>
