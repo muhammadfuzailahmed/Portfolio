@@ -100,13 +100,43 @@ function Project() {
         },
     ]
   return (
-    <div className='w-full min-h-screen dark:bg-[#0d0e0e]'>
+    <div className='w-full min-h-screen dark:bg-[#0d0e0e] overflow-hidden'>
+        <motion.div
+        initial={{
+          opacity: 0,
+          x: 35
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0
+        }}
+        viewport={{
+          once: "true",
+          amount: 0.9
+        }}
+        transition={{
+          duration: 0.5
+        }}
+        >
         <h1 className='font-bold text-center dark:text-white text-5xl pt-10'>Projects</h1>
         <div className='w-40 h-2 bg-cyan-400 m-auto rounded-lg my-2'></div>
+        </motion.div>
         <div className='w-[80vw] mt-12 m-auto md:flex items-center justify-around gap-4 relative'>
             {
                 latestProjects.map(project => (
                     <motion.div
+                    initial={{
+                    opacity: 0,
+                    y: 35
+                    }}
+                    whileInView={{
+                    opacity: 1,
+                    y: 0
+                    }}
+                    viewport={{
+                    once: "true",
+                    amount: 0.4
+                    }}
                     whileHover={{
                     scale: 1.02,
                     cursor: "pointer",
@@ -135,11 +165,27 @@ function Project() {
                 ))
             }
         </div>
-            <div className='text-center mt-4'>
+            <motion.div 
+            initial={{
+                opacity: 0,
+                y: 25
+            }}
+            whileInView={{
+                opacity: 1,
+                y: 0
+            }}
+            viewport={{
+                once: "true",
+                amount: 0.8
+            }}
+            transition={{
+                duration: 0.5
+            }}
+            className='text-center mt-4'>
                 <Link to="/projects">
                 <Button title="Show more" bg="tranparent" bgHover="hover:text-cyan-400"/>
                 </Link>
-            </div>            
+            </motion.div>   
     </div>
   )
 }
