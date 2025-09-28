@@ -45,14 +45,46 @@ function About() {
   ]
 
   return (
-    <div className='w-full min-h-screen dark:bg-[#0d0e0e] pt-2'>
+    <div className='w-full min-h-[130vh] dark:bg-[#0d0e0e] py-2'>
+        <motion.div
+        initial={{
+          opacity: 0,
+          x: -35
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0
+        }}
+        viewport={{
+          once: "true",
+        }}
+        transition={{
+          duration: 0.5
+        }}
+        > {/*Animation */}
         <div className='text-center'>
         <h1 className='dark:text-white font-bold text-5xl'>About Me</h1>
         <div className='w-52 h-2 bg-cyan-400 m-auto rounded-lg mt-3'></div>
         </div>
-        <div>
+        </motion.div>
+        <motion.div 
+        initial={{
+          opacity: 0,
+          y: 45,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+        }}
+        viewport={{
+          once: "true",
+          amount: 0.5
+        }}
+        transition={{
+          duration: 1
+        }}
+        >
             <div className="relative w-[95vw] md:w-[35vw] mx-auto mt-12">
-            {/* vertical line centered in the 64px icon column */}
             <span
               aria-hidden
               className="pointer-events-none absolute top-0 bottom-0 left-[25px] w-[2px] bg-gray-600 dark:bg-[#7A7A73]"
@@ -77,21 +109,69 @@ function About() {
             </ul>
           </div>
 
-        </div>
+        </ motion.div>
 
         <div className='md:mt-10 mt-15'>
-              <hr className='bg-[#7A7A73] md:w-[70vw] w-[90vw] h-1 m-auto' />
-            <div className='w-[70vw] md:h-[12vh] h-auto m-auto md:flex items-center'>
+              <motion.hr
+              initial={{
+                opacity: 0
+              }}
+              whileInView={{
+                opacity: 1
+              }}
+              transition={{
+                duration: 0.75
+              }}
+              className='bg-[#7A7A73] md:w-[70vw] w-[90vw] h-1 m-auto' />
+            <motion.div
+            initial={{
+              opacity: 0
+            }}
+            whileInView={{
+              opacity: 1
+            }}
+            viewport={{
+              once: "true",
+              amount: "all"
+            }}
+            transition={{
+              duration: 1
+            }}
+            className='w-[70vw] md:h-[12vh] h-auto m-auto md:flex items-center'>
                 <Aboutcard title="LinkedIn" location="https://www.linkedin.com/in/mfuzailahmed/"/>
                 <Aboutcard title="GitHub" location="https://github.com/muhammadfuzailahmed" />
                 <Aboutcard title="Instagram" location="https://www.instagram.com/muhammad_fuzail_30/" />
-            </div>
-            <hr className='bg-[#7A7A73] md:w-[70vw] w-[90vw] h-1 m-auto' />
+            </motion.div>
+            <motion.hr
+            initial={{
+              opacity: 0
+            }}
+            whileInView={{
+              opacity: 1
+            }}
+            transition={{
+              duration: 0.75
+            }}
+            viewport={{
+              once: "true",
+              amount: "all"
+            }}
+            className='bg-[#7A7A73] md:w-[70vw] w-[90vw] h-1 m-auto' />
         </div>
 
         <div>
               <div className='md:w-[50vw] m-auto'>
-                  <h1 className='dark:text-white font-bold text-4xl text-center mt-10'><span><i class="fa-solid fa-graduation-cap"></i></span> Certificates</h1>
+                  <motion.h1
+                  initial={{
+                    opacity: 0
+                  }}
+                  whileInView={{
+                    opacity: 1
+                  }}
+                  transition={{
+                    duration: 1
+                  }}
+                  className='dark:text-white font-bold text-4xl text-center mt-10'><span><i class="fa-solid fa-graduation-cap"></i></span> Certificates</motion.h1>
                   <div className='md:w-[45vw] m-auto mt-10 md:flex items-center justify-between'>
                       <Aboutcertificatecard redirectTo="/certificates/meta" provider="Meta"desc="Front-End Web Developer" type="Course Specialization" img={<i class="fa-brands fa-meta"></i>} />
                       <Aboutcertificatecard redirectTo="/certificates/google" provider="Google"desc="Programming in Python" type="Crash course" img={<i class="fa-brands fa-google"></i>} />
