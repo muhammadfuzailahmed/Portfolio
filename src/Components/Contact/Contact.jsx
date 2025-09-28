@@ -3,6 +3,7 @@ import contact from '../../assets/Contact/contact.png'
 import Button from '../Button/Button.jsx'
 import { Link } from 'react-router-dom'
  import { toast } from 'react-toastify';
+ import {motion} from 'motion/react'
 
 function Contact() {
     const [isCopied, setIsCopied] = useState(false)
@@ -17,7 +18,22 @@ function Contact() {
     } 
   return (
     <div className='w-full min-h-[80vh] dark:bg-[#0d0e0e] md:pt-10 pt-20'>
-        <div className='border-1 border-cyan-400 rounded-sm w-[80vw] m-auto py-8 shadow-lg shadow-cyan-400 hover:shadow-xl hover:cursor-pointer'>
+        <motion.div
+        initial={{
+            width: 0,
+        }}
+        whileInView={{
+            width: "80vw",
+            border: "1px solid oklch(78.9% 0.154 211.53)"
+        }}
+        viewport={{
+            amount: 0.6,
+            once: "true"
+        }}
+        transition={{
+            duration: 1.2
+        }}
+        className=' rounded-sm w-[80vw] m-auto py-8 shadow-md shadow-cyan-400 hover:shadow-lg hover:cursor-pointer overflow-hidden duration-800 ease-in-out'>
             <h1 className='dark:text-white text-center font-bold text-5xl'>Contact</h1>
             <div className='w-52 h-2 bg-cyan-400 m-auto rounded-lg mt-3 mb-12'></div>
             <div className='md:flex items-center justify-between px-5 w-[80vw]'>
@@ -42,7 +58,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     </div>
   )
 }
