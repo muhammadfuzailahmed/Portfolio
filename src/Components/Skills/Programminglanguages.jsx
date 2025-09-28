@@ -27,15 +27,26 @@ function Programminglanguages() {
             prograamingLanguagesSkills.map(skill => (
                 <motion.div 
                 whileHover={{
-                // scale: 1.02,
                 cursor: "pointer",
                 backgroundColor: "#000000",
                 color: "#fff",
                 scale: 1.10,
-                boxShadow: "5px 5px 5px 4px cyan"
+                boxShadow: "5px 5px 15px 4px cyan"
                 }}
                 transition={{
-                    duration: 0.45
+                    duration: 0.5
+                }}
+                initial={{
+                    opacity: 0,
+                    y: 25
+                }}
+                whileInView={{
+                    opacity: 1,
+                    y: 0
+                }}
+                viewport={{
+                once: "true",
+                amount: "all"
                 }}
                 className='mt-3 p-3 rounded-sm md:w-[30vw] m-auto dark:border-0 border-2 border-cyan-400'>
                     <div className='flex items-center justify-between'>
