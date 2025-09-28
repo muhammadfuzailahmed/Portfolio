@@ -16,6 +16,14 @@ function Aboutcertificatecard({provider, desc, type, img, redirectTo}) {
     }
   return (
     <motion.div 
+    initial={{
+        opacity: 0,
+        y: 35
+    }}
+    whileInView={{
+        opacity: 1,
+        y: 0
+    }}
     whileHover={{
         cursor: "pointer",
         scale: 1.02
@@ -24,7 +32,11 @@ function Aboutcertificatecard({provider, desc, type, img, redirectTo}) {
         type: "spring",
         stiffness: 400,
         damping: 20,
-        duration: 0.5
+        duration: 1
+    }}
+    viewport={{
+        once: "true",
+        amount: 0.6
     }}
     onMouseEnter={MouseEnter}
     onMouseLeave={MouseLeave}
