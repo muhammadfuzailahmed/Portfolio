@@ -3,6 +3,8 @@ import Allprojects from '../../Project/Allprojects'
 import Javascriptprojects from '../../Project/Javascriptprojects'
 import { Link } from 'react-router-dom'
 import { NavHashLink } from 'react-router-hash-link';
+import Reactjsprojects from '../../Project/Reactjsprojects';
+import Appdevelopmentprojects from '../../Project/Appdevelopmentprojects';
 
 function Projects() {
     const [tab, setTab] = useState("showall")
@@ -42,8 +44,8 @@ function Projects() {
 
         {tab == "showall" && <Allprojects />}
         {tab == "js" && <Javascriptprojects />}
-        {tab == "react" && <div className='dark:text-white'>React Projects</div>}
-        {tab == "app" && <div className='dark:text-white'>App development Projects</div>}
+        {tab == "react" && <Reactjsprojects />}
+        {tab == "app" && <Appdevelopmentprojects />}
 
     </div>
   )
