@@ -152,7 +152,7 @@ function Project() {
                         <p className='dark:text-white mt-3 w-68 leading-none text-justify'>{project.shortDesc}</p>
                         <div className='my-5'>
                             {project.techSTack.map(t => (
-                                <span className='dark:text-white px-2 py-1 mx-1 dark:bg-gray-600 bg-gray-400 rounded-sm'>{t}</span>
+                                <span className='dark:text-white px-2 py-1 mx-1 dark:bg-gray-600 bg-gray-300 rounded-sm'>{t}</span>
                             ))}
                         </div>
                         <div className='text-left'>
@@ -176,7 +176,7 @@ function Project() {
             }}
             viewport={{
                 once: "true",
-                amount: 0.8
+                amount: 0.3
             }}
             transition={{
                 duration: 0.5
