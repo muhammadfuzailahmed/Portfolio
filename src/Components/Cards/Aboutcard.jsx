@@ -8,8 +8,6 @@ function Aboutcard({title,location}) {
         whileHover={{
             scale: 1.02,
             cursor: "pointer",
-            backgroundColor: "#000000",
-            color: "#fff",
             boxShadow: "5px 5px 10px 2px cyan"
         }}
         transition={{
