@@ -104,7 +104,7 @@ function Project() {
         <motion.div
         initial={{
           opacity: 0,
-          x: 35
+          x: -35
         }}
         whileInView={{
           opacity: 1,
