@@ -42,7 +42,7 @@ function Contact() {
                 </div>
                 <div className='md:w-[75%]'>
                     <h1 className='dark:text-white font-bold md:text-5xl text-3xl md:w-[80%] md:text-left text-center'>Let's work together on your next project!</h1>
-                    <p className='my-5 dark:text-gray-300 text-xl text-center'>Tell me about your idea</p>
+                    <p className='my-5 dark:text-gray-300 text-xl md:text-left text-center'>Tell me about your idea</p>
                     <div className='mt-4 md:text-left text-center'>
                     <div className='md:flex items-center gap-4'>
                     <div className='md:mb-0 mb-4'>
