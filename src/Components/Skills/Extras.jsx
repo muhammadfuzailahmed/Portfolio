@@ -25,8 +25,6 @@ function Extras() {
                 <motion.div 
                 whileHover={{
                 cursor: "pointer",
-                backgroundColor: "#000000",
-                color: "#fff",
                 scale: 1.10,
                 boxShadow: "5px 5px 15px 4px cyan"
                 }}
