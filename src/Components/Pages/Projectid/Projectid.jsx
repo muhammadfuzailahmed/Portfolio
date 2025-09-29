@@ -3,6 +3,9 @@ import { useParams } from 'react-router-dom'
 import { Projects } from '../../Data/Projects'
 import Button from '../../Button/Button';
 import { Link } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
+import {motion} from "motion/react";
+
 
 const normalize = s => decodeURIComponent(s).trim().toLowerCase();
 function Projectid() {
@@ -29,48 +32,186 @@ function Projectid() {
   return (
     <div className='w-full min-h-screen dark:bg-[#0d0e0e]'>
         <div className='w-full h-14 sticky top-0 backdrop-blur-xl'></div>
-        <div className='md:flex items-center justify-between px-10'>
+        <motion.div 
+        initial={{
+            opacity: 0,
+            y: 10
+        }}
+        animate={{
+            opacity: 1,
+            y: 0
+        }}
+        className='md:flex items-center justify-between px-10'>
             <Link to="/projects">
-            <p className='dark:text-white transition-all hover:text-gray-500 cursor-pointer'><span className='mr-5'><i class="fa-solid fa-arrow-left"></i></span> Back</p></Link>
+            <p className='dark:text-white transition-all hover:text-gray-500 cursor-pointer'><span className='mr-5'><i class="fa-solid fa-arrow-left"></i></span> Explore more projects</p></Link>
             <div className='md:mt-0 mt-5 md:flex-row flex'>
                 <Button title="Live Demo" bg="transparent" bgHover="hover:bg-cyan-500"/>
                 <span className='ml-3'><Button title="GitHub" bg="bg-cyan-500" bgHover="hover:bg-transparent"/></span>
             </div>
-        </div>
+        </motion.div>
         <div className='px-10 mt-8'>
-        <h1 className='dark:text-white font-bold text-4xl'>{project.title}</h1>
-        <p className='mt-2 dark:text-white'>{project.shortDesc}</p>
-        <div className='my-8 md:w-[70%] w-[95%] md:h-120 h-68 m-auto bg-gray-600  rounded-sm'>
+        <motion.h1
+        initial={{
+            opacity: 0,
+            y: 35
+        }}
+        animate={{
+            opacity: 1,
+            y: 0
+        }}
+        transition={{
+            duration: 0.5
+        }}
+        className='dark:text-white font-bold text-4xl'>{project.title}</motion.h1>
+        <motion.p
+        initial={{
+            opacity: 0,
+            y: 35
+        }}
+        animate={{
+            opacity: 1,
+            y: 0
+        }}
+        transition={{
+            delay: 0.5,
+            duration: 0.5
+        }}
+        className='mt-2 dark:text-white'>{project.shortDesc}</motion.p>
+        <motion.div 
+        initial={{
+            opacity: 0,
+            y: 35
+        }}
+        whileInView={{
+            opacity: 1,
+            y: 0
+        }}
+        viewport={{
+            once: "true"
+        }}
+        transition={{
+            delay: 1,
+            duration: 0.5
+        }}
+        className='my-8 md:w-[70%] w-[95%] md:h-120 h-68 m-auto bg-gray-600 rounded-sm'>
 
-        </div>
+        </motion.div>
 
-        <div className='border-t-2 border-white mt-20 md:flex justify-between md:px-10'>
-            <div className='md:w-[70%] mt-10'>
+        <motion.div 
+        initial={{
+            borderTopWidth: 0
+        }}
+        whileInView={{
+            borderTopWidth: 2
+        }}
+        viewport={{
+            once: "true",
+            amount: 0.5
+        }}
+        className=' border-white mt-20 md:flex justify-between md:px-10'>
+            <motion.div
+            initial={{
+                opacity: 0,
+                x: -35
+            }}
+            whileInView={{
+                opacity: 1,
+                x: 0
+            }}
+            viewport={{
+                once: "true",
+                amount: 0.5
+            }}
+            transition={{
+                duration: 0.5
+            }}
+            className='md:w-[70%] mt-10'>
                 <h1 className='dark:text-white font-bold text-3xl md:text-left text-center'>Description</h1>
                 {project.fullDesc.map(desc => (
                     <p className='mt-3 dark:text-white md:text-left text-justify'>{desc}</p>
                 ))}
-            </div>
-            <div className='mt-10 md:w-[30%] md:text-center'>
+            </motion.div>
+            <motion.div 
+            initial={{
+                opacity: 0,
+                x: 35
+            }}
+            whileInView={{
+                opacity: 1,
+                x: 0
+            }}
+            viewport={{
+                once: "true",
+                amount: 0.5
+            }}
+            transition={{
+                delay: 0.2,
+                duration: 0.5
+            }}
+            className='mt-10 md:w-[30%] md:text-center'>
                 <h1 className='dark:text-white font-bold text-3xl text-center'>Tech Stack</h1>
                 <div className='mt-10'>
                 {project.techSTack.map(tech => (
                     <span className='dark:text-white ml-2 px-2 py-1 bg-gray-400 dark:bg-gray-600 font-bold cursor-pointer rounded-sm'>{tech}</span>
                 ))}
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
 
-        <div className='border-t-2 border-white mt-20 md:flex justify-between md:px-10'>
-            <div className='md:w-[70%] mt-10'>
+        <motion.div
+        initial={{
+            borderTopWidth: 0
+        }}
+        whileInView={{
+            borderTopWidth: 2
+        }}
+        viewport={{
+            once: "true",
+            amount: 0.5
+        }}
+        className='border-white mt-20 md:flex justify-between md:px-10'>
+            <motion.div 
+            initial={{
+                opacity: 0,
+                x: -35
+            }}
+            whileInView={{
+                opacity: 1,
+                x: 0
+            }}
+            viewport={{
+                once: "true",
+                amount: 0.5
+            }}
+            transition={{
+                duration: 0.5
+            }}
+            className='md:w-[70%] mt-10'>
                 <h1 className='dark:text-white font-bold text-3xl md:text-left text-center'>Key Features</h1>
-                <ul>
+                <ul className='w-[90%]'>
                 {project.keyFeatures.map(feature => (
                     <li className='mt-2 dark:text-white list-disc'>{feature}</li>
                 ))}
                 </ul>
-            </div>
-            <div className='mt-10 md:w-[30%] text-center'>
+            </motion.div>
+            <motion.div 
+            initial={{
+                opacity: 0,
+                x: 35
+            }}
+            whileInView={{
+                opacity: 1,
+                x: 0
+            }}
+            viewport={{
+                once: "true",
+                amount: 0.5
+            }}
+            transition={{
+                delay: 0.2,
+                duration: 0.5
+            }}
+            className='mt-10 md:w-[30%] text-center'>
                 <h1 className='dark:text-white font-bold text-3xl text-center'>Timeline</h1>
                 <div className='mt-10'>
                 <ul>
@@ -92,10 +233,39 @@ function Projectid() {
                 ))}
                 </ul>
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
 
-        <div  className='border-t-2 border-white mt-20 md:px-10'>
+        <motion.div
+        initial={{
+            borderTopWidth: 0
+        }}
+        whileInView={{
+            borderTopWidth: 2
+        }}
+        viewport={{
+            once: "true",
+            amount: 0.5
+        }} 
+        className='border-white mt-20 md:px-10'>
+            <motion.div
+            initial={{
+                opacity: 0,
+                x: -35
+            }}
+            whileInView={{
+                opacity: 1,
+                x: 0
+            }}
+            viewport={{
+                once: "true",
+                amount: 0.5
+            }}
+            transition={{
+                delay: 0.2,
+                duration: 0.5
+            }}
+            >
             <h1 className='font-bold text-3xl dark:text-white mt-10'>What I learned</h1>
             <div className='mt-5'>
 
@@ -103,9 +273,39 @@ function Projectid() {
                 <li className='mt-2 dark:text-white list-disc'>{learned}</li>
             ))}
             </div>
-        </div>
+            </motion.div>
+        </motion.div>
 
-         <div className='border-t-2 border-white mt-20 md:px-10'>
+         <motion.div
+          initial={{
+            borderTopWidth: 0
+        }}
+        whileInView={{
+            borderTopWidth: 2
+        }}
+        viewport={{
+            once: "true",
+            amount: 0.5
+        }} 
+         className='border-white mt-20 md:px-10'>
+            <motion.div
+            initial={{
+                opacity: 0,
+                x: 35
+            }}
+            whileInView={{
+                opacity: 1,
+                x: 0
+            }}
+            viewport={{
+                once: "true",
+                amount: 0.5
+            }}
+            transition={{
+                delay: 0.2,
+                duration: 0.5
+            }}
+            >
             <h1 className='font-bold text-3xl dark:text-white mt-10'>Some Snapshots</h1>
             <div className='md:w-[40%] w-[100%] mt-10 m-auto'>
                     <div className='relative'>
@@ -120,13 +320,39 @@ function Projectid() {
                 ))}    
                 </div>
             </div>
-        </div>
+            </motion.div>
+        </motion.div>
                 
 
-        <div className='border-t-2 border-white mt-10 md:px-10 py-10'>
-            <Link to="/#home">
-            <p className='dark:text-white transition-all hover:text-gray-500 cursor-pointer'><span className='mr-5'><i class="fa-solid fa-arrow-left"></i></span> Back to Home</p></Link>
-        </div>
+        <motion.div
+         initial={{
+            borderTopWidth: 0
+        }}
+        whileInView={{
+            borderTopWidth: 2
+        }}
+        viewport={{
+            once: "true",
+            amount: 0.5
+        }} 
+        className='border-white mt-10 md:px-10 py-10'>
+            <NavHashLink to="/#projects">
+            <motion.p 
+            initial={{
+                opacity: 0
+            }}
+            whileInView={{
+                opacity: 1
+            }}
+            transition={{
+                duration: 0.5
+            }}
+            viewport={{
+                once: "true",
+                amount: 0.9
+            }}
+            className='dark:text-white transition-all hover:text-gray-500 cursor-pointer'><span className='mr-5'><i class="fa-solid fa-arrow-left"></i></span> Back</motion.p></NavHashLink>
+        </motion.div>
         </div>
     </div>
   )
