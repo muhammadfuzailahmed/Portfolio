@@ -51,6 +51,7 @@ function Contactform() {
       <NavHashLink to="/#contact">
         <p  className='dark:text-white transition-all hover:text-gray-500 cursor-pointer ml-10'><span className='mr-3'><i class="fa-solid fa-arrow-left"></i></span> Back</p>
       </NavHashLink>
+      <div className='w-full h-0.5 dark:bg-gray-400 bg-black mt-4'></div>
       <div className='text-center'>
         <h1 className='dark:text-white font-bold text-4xl pt-10'>Say Hello!</h1>
         <div className='w-48 h-2 bg-cyan-400 m-auto rounded-full mb-5 mt-1'></div>
