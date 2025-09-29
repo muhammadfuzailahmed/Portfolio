@@ -49,7 +49,7 @@ function Contactform() {
     <>
     <div className='w-full h-auto dark:bg-[#0d0e0e]'>
       <NavHashLink to="/#contact">
-        <p  className='dark:text-white transition-all hover:text-gray-500 cursor-pointer ml-10'><span className='mr-3'><i class="fa-solid fa-arrow-left"></i></span> Back</p>
+        <p  className='dark:text-white transition-all hover:text-gray-500 cursor-pointer md:ml-10 ml-5 md:pt-0 pt-4'><span className='mr-3'><i class="fa-solid fa-arrow-left"></i></span> Back</p>
       </NavHashLink>
       <div className='w-full h-0.5 dark:bg-gray-400 bg-black mt-4'></div>
       <div className='text-center'>
