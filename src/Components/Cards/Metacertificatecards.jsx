@@ -25,11 +25,35 @@ function Certificatecards() {
             <NavHashLink to="/#about" scroll={top}>
                 <p className='dark:text-white transition-all hover:text-gray-500 cursor-pointer ml-10'><span className='mr-3'><i class="fa-solid fa-arrow-left"></i></span> Back</p>
             </NavHashLink>
+            <motion.div
+            initial={{
+                opacity : 0
+            }}
+            whileInView={{
+                opacity : 1,
+            }}
+            viewport={{
+                once:  "true"
+            }}
+            >
             <h1 className='text-center font-bold text-4xl dark:text-white pt-8'>Meta Certificates</h1>
             <div className='w-48 h-2 bg-cyan-400 m-auto rounded-lg mt-2 mb-8'></div>
+            </motion.div>
         <div className='w-[80vw] m-auto grid md:grid-cols-4 gap-5 '>
             {Metacertificates.map(card => (
                 <motion.div 
+                initial={{
+                    opacity : 0,
+                    y: 35
+                }}
+                whileInView={{
+                    opacity : 1,
+                    y: 0
+                }}
+                viewport={{
+                    once:  "true",
+                    amount: 0.3
+                }}
                 whileHover={{
                 scale: 1.02,
                 cursor: "pointer",
