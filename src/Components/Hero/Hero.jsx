@@ -40,9 +40,12 @@ function Hero() {
                     opacity: 0,
                     y: 30,
                 }}
-                animate={{
+                whileInView={{
                     opacity: 1,
                     y: 0,
+                }}
+                viewport={{
+                    once: "true"
                 }}
                 transition={{
                     duration: 0.5
@@ -61,9 +64,12 @@ function Hero() {
                     opacity: 0,
                     y: 30,
                 }}
-                animate={{
+                whileInView={{
                     opacity: 1,
                     y: 0,
+                }}
+                viewport={{
+                    once: "true"
                 }}
                 transition={{
                     delay: 0.5,
@@ -75,9 +81,12 @@ function Hero() {
                     opacity: 0,
                     y: 30,
                 }}
-                animate={{
+                whileInView={{
                     opacity: 1,
                     y: 0,
+                }}
+                viewport={{
+                    once: "true"
                 }}
                 transition={{
                     delay: 1,
@@ -101,13 +110,15 @@ function Hero() {
                 <motion.video
                 initial={{
                     opacity: 0,
-                    y: 45,
-                    x: 45
+                    y: 45
                 }}
-                animate={{
+                whileInView={{
                     opacity: 1,
                     y: 0,
-                    x: 0
+                }}
+                viewport={{
+                    once: "true",
+                    amount: 0.3
                 }}
                 transition={{
                     delay: 1.5,
