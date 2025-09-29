@@ -168,6 +168,9 @@ function About() {
                   whileInView={{
                     opacity: 1
                   }}
+                  viewport={{
+                    once: "true"
+                  }}
                   transition={{
                     duration: 1
                   }}
