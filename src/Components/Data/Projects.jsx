@@ -19,6 +19,8 @@ import Weatherappimg from '../../assets/Projects/React/WeatherApp/Weatherappimg.
 export const Projects = [
     {
         language: "JavaScript",
+        liveDemo: "https://todo-list-using-java-script-phi.vercel.app/",
+        sourceCode: "https://github.com/muhammadfuzailahmed/Todo-List-using-JavaScript", 
         video: "video",
         img: ToDolistimg,
         title: "To-Do List",
@@ -51,6 +53,8 @@ export const Projects = [
     },
     {
         language: "JavaScript",
+        liveDemo: "https://github.com/muhammadfuzailahmed/Quiz-App",
+        sourceCode: "https://github.com/muhammadfuzailahmed/Quiz-App",
         video: "video",
         img: QuizApp,
         title: "Quiz App",
@@ -83,6 +87,8 @@ export const Projects = [
     },
     {
         language: "JavaScript",
+        liveDemo: "https://expense-tracker-sooty-six-89.vercel.app/",
+        sourceCode: "https://github.com/muhammadfuzailahmed/Expense-Tracker",
         video: "video",
         img: ExpenseTracker,
         title: "Expense Tracker",
@@ -115,6 +121,8 @@ export const Projects = [
     },
     {
         language: "JavaScript",
+        liveDemo: "https://weather-app-using-api-mocha.vercel.app/",
+        sourceCode: "https://github.com/muhammadfuzailahmed/Weather-App-using-API",
         video: "video",
         img: Img1,
         title: "Weather App (API based)",
@@ -147,6 +155,8 @@ export const Projects = [
     },
     {
         language: "JavaScript",
+        liveDemo: "https://student-managemnt-system-mu.vercel.app/",
+        sourceCode: "https://github.com/muhammadfuzailahmed/Student-Managemnt-System",
         video: "video",
         img: Loginpage,
         title: "Student Management System",
@@ -179,6 +189,8 @@ export const Projects = [
 
     {
         language: "ReactJs",
+        liveDemo: "https://passwordgenerator-rust-gamma.vercel.app/",
+        sourceCode: "https://github.com/muhammadfuzailahmed/Password-Generator",
         video: "video",
         img: PasswordGenerator,
         title: "Password Generator",
@@ -210,6 +222,8 @@ export const Projects = [
     },
     {
         language: "ReactJs",
+        liveDemo: "https://react-weather-app-api-based.vercel.app/",
+        sourceCode: "https://github.com/muhammadfuzailahmed/React-Weather-App-API-based-",
         video: "video",
         img: Weatherappimg,
         title: "Weather App (API based)",

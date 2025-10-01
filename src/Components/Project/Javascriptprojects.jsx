@@ -18,8 +18,10 @@ import Button from '../Button/Button'
 
 function Javascriptprojects() {
     const Projects = [
-         {
+        {
                 language: "JavaScript",
+                liveDemo: "https://todo-list-using-java-script-phi.vercel.app/",
+                sourceCode: "https://github.com/muhammadfuzailahmed/Todo-List-using-JavaScript", 
                 video: "video",
                 img: ToDolistimg,
                 title: "To-Do List",
@@ -31,7 +33,7 @@ function Javascriptprojects() {
                 timeLine: [
                     {
                         duration: "1 day",
-                        isCompleted: true,
+                        isCompleted: "True",
                         status: "Live"
                     }
                 ],
@@ -49,9 +51,11 @@ function Javascriptprojects() {
                     "Deploying static apps on Vercel."
                 ],
                 snapShots: [ToDolistimg]
-            },
-            {
+        },
+        {
                 language: "JavaScript",
+                liveDemo: "https://github.com/muhammadfuzailahmed/Quiz-App",
+                sourceCode: "https://github.com/muhammadfuzailahmed/Quiz-App",
                 video: "video",
                 img: QuizApp,
                 title: "Quiz App",
@@ -63,7 +67,7 @@ function Javascriptprojects() {
                 timeLine: [
                     {
                         duration: "2 days",
-                        isCompleted: true,
+                        isCompleted: "True",
                         status: "Live"
                     }
                 ],
@@ -81,9 +85,11 @@ function Javascriptprojects() {
                     "Applied conditions to check answers and update the score."
                 ],
                 snapShots: [QuizApp]
-            },
-            {
+        },
+        {
                 language: "JavaScript",
+                liveDemo: "https://expense-tracker-sooty-six-89.vercel.app/",
+                sourceCode: "https://github.com/muhammadfuzailahmed/Expense-Tracker",
                 video: "video",
                 img: ExpenseTracker,
                 title: "Expense Tracker",
@@ -95,7 +101,7 @@ function Javascriptprojects() {
                 timeLine: [
                     {
                         duration: "1 day",
-                        isCompleted: true,
+                        isCompleted: "True",
                         status: "Live"
                     }
                 ],
@@ -113,9 +119,11 @@ function Javascriptprojects() {
                     "Responsive web design basics."
                 ],
                 snapShots: [ExpenseTracker]
-            },
-            {
+        },
+        {
                 language: "JavaScript",
+                liveDemo: "https://weather-app-using-api-mocha.vercel.app/",
+                sourceCode: "https://github.com/muhammadfuzailahmed/Weather-App-using-API",
                 video: "video",
                 img: Img1,
                 title: "Weather App (API based)",
@@ -127,7 +135,7 @@ function Javascriptprojects() {
                 timeLine: [
                     {
                         duration: "1 day",
-                        isCompleted: true,
+                        isCompleted: "True",
                         status: "Live"
                     }
                 ],
@@ -145,9 +153,11 @@ function Javascriptprojects() {
                     "Responsive web design basics."
                 ],
                 snapShots: [Img1, Img2]
-            },
-            {
+        },
+        {
                 language: "JavaScript",
+                liveDemo: "https://student-managemnt-system-mu.vercel.app/",
+                sourceCode: "https://github.com/muhammadfuzailahmed/Student-Managemnt-System",
                 video: "video",
                 img: Loginpage,
                 title: "Student Management System",
@@ -159,7 +169,7 @@ function Javascriptprojects() {
                 timeLine: [
                     {
                         duration: "3 weeks",
-                        isCompleted: true,
+                        isCompleted: "True",
                         status: "Live"
                     }
                 ],
@@ -176,7 +186,7 @@ function Javascriptprojects() {
                     "Structuring a multi-panel project with different permissions."
                 ],
                 snapShots: [Loginpage, Forgotpassword, AdminPanel1, AdminPanel2, AdminPanel3, AdminPanel4, Studentpanel1, Studentpanel2]
-            },
+        },
     ]
   return (
     <div className='w-full min-h-screen'>

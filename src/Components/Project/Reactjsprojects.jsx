@@ -11,6 +11,8 @@ function Reactjsprojects() {
     const reactProjects = [
         {
                 language: "ReactJs",
+                liveDemo: "https://passwordgenerator-rust-gamma.vercel.app/",
+                sourceCode: "https://github.com/muhammadfuzailahmed/Password-Generator",
                 video: "video",
                 img: PasswordGenerator,
                 title: "Password Generator",
@@ -39,9 +41,11 @@ function Reactjsprojects() {
                     "Learned how to render changes in the UI instantly based on user input."
                 ],
                 snapShots: [PasswordGenerator]
-            },
-            {
+        },
+        {
                 language: "ReactJs",
+                liveDemo: "https://react-weather-app-api-based.vercel.app/",
+                sourceCode: "https://github.com/muhammadfuzailahmed/React-Weather-App-API-based-",
                 video: "video",
                 img: Weatherappimg,
                 title: "Weather App (API based)",
@@ -70,7 +74,7 @@ function Reactjsprojects() {
                     "Improved skills in designing interfaces that work well across desktop and mobile devices."
                 ],
                 snapShots: [Weatherappimg]
-            },
+        },
     ]
 
   return (
