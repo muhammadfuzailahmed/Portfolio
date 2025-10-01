@@ -5,6 +5,7 @@ import Skills from '../Skills/Skills'
 import Project from '../Project/Project'
 import Contact from '../Contact/Contact'
 import Scrolltotop from '../Scrolltotop/Scrolltotop'
+import Certificates from '../Certificates/Certificates'
 
 function Maincontent() {
   return (
@@ -16,6 +17,10 @@ function Maincontent() {
 
     <section id='about'>
         <About />
+    </section>
+
+    <section id='certificates'>
+        <Certificates />
     </section>
 
     <section id='skills'>
