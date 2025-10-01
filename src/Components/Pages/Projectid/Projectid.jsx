@@ -45,8 +45,14 @@ function Projectid() {
             <Link to="/projects">
             <p className='dark:text-white transition-all hover:text-gray-500 cursor-pointer'><span className='mr-5'><i class="fa-solid fa-arrow-left"></i></span> Explore more projects</p></Link>
             <div className='md:mt-0 mt-5 md:flex-row flex'>
+                <Link to={project.liveDemo} target='_blank'>
                 <Button title="Live Demo" bg="transparent" bgHover="hover:bg-cyan-500"/>
-                <span className='ml-3'><Button title="GitHub" bg="bg-cyan-500" bgHover="hover:bg-transparent"/></span>
+                </Link>
+                <span className='ml-3'>
+                    <Link to={project.sourceCode} target='_blank'>
+                    <Button title="GitHub" bg="bg-cyan-500" bgHover="hover:bg-transparent"/>
+                    </Link>
+                    </span>
             </div>
         </motion.div>
         <div className='px-10 mt-8'>
