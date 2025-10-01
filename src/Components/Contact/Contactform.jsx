@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
 import { NavHashLink } from 'react-router-hash-link';
+import {motion} from 'motion/react'
 
 function Contactform() {
   const [name, setName] = useState("");
@@ -49,10 +50,42 @@ function Contactform() {
     <>
     <div className='w-full h-auto dark:bg-[#0d0e0e]'>
       <NavHashLink to="/#contact">
-        <p  className='dark:text-white transition-all hover:text-gray-500 cursor-pointer md:ml-10 ml-5 md:pt-0 pt-4'><span className='mr-3'><i class="fa-solid fa-arrow-left"></i></span> Back</p>
+        <motion.p
+        initial={{
+          opacity: 0
+        }}
+        whileInView={{
+          opacity: 1
+        }}
+        transition={{
+          duration: 0.5
+        }}
+          className='dark:text-white transition-all hover:text-gray-500 cursor-pointer md:ml-10 ml-5 md:pt-0 pt-4'><span className='mr-3'><i class="fa-solid fa-arrow-left"></i></span> Back</motion.p>
       </NavHashLink>
-      <div className='w-full h-0.5 dark:bg-gray-400 bg-black mt-4'></div>
-      <div className='text-center'>
+      <motion.div
+      initial={{
+          opacity: 0
+        }}
+        whileInView={{
+          opacity: 1
+        }}
+        transition={{
+          duration: 0.6
+        }}
+      className='w-full h-0.5 dark:bg-gray-400 bg-black mt-4'></motion.div>
+      <motion.div
+      initial={{
+          opacity: 0,
+          y: 35
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0
+        }}
+        transition={{
+          duration: 0.5
+        }}
+      className='text-center'>
         <h1 className='dark:text-white font-bold text-4xl pt-10'>Say Hello!</h1>
         <div className='w-48 h-2 bg-cyan-400 m-auto rounded-full mb-5 mt-1'></div>
         <div className='text-center mb-6'>
@@ -71,7 +104,7 @@ function Contactform() {
         </div>
         <button type="submit" className='border-3 border-cyan-400 px-3 py-1.5 w-46 rounded-md text-cyan-400 cursor-pointer font-bold hover:bg-cyan-500 hover:text-white'>Submit Form</button>
       </form>
-      </div>
+      </motion.div>
       </div>
       </>
   );
