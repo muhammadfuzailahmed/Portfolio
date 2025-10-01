@@ -8,6 +8,7 @@ import reactLogo from '../../assets/About/react.svg'
 import {motion} from 'motion/react'
 import Aboutcard from '../Cards/Aboutcard';
 import Aboutcertificatecard from '../Cards/Aboutcertificatecard';
+import Certificates from '../Certificates/Certificates';
 
 function About() {
 
@@ -45,7 +46,7 @@ function About() {
   ]
 
   return (
-    <div className='w-full min-h-[130vh] dark:bg-[#0d0e0e] py-2'>
+    <div className='w-full min-h-auto dark:bg-[#0d0e0e] py-2'>
         <motion.div
         initial={{
           opacity: 0,
@@ -157,29 +158,6 @@ function About() {
               amount: "all"
             }}
             className='bg-[#7A7A73] md:w-[70vw] w-[90vw] h-1 m-auto' />
-        </div>
-
-        <div>
-              <div className='md:w-[50vw] m-auto'>
-                  <motion.h1
-                  initial={{
-                    opacity: 0
-                  }}
-                  whileInView={{
-                    opacity: 1
-                  }}
-                  viewport={{
-                    once: "true"
-                  }}
-                  transition={{
-                    duration: 1
-                  }}
-                  className='dark:text-white font-bold text-4xl text-center mt-10'><span><i class="fa-solid fa-graduation-cap"></i></span> Certificates</motion.h1>
-                  <div className='md:w-[45vw] m-auto mt-10 md:flex items-center justify-between'>
-                      <Aboutcertificatecard redirectTo="/certificates/meta" provider="Meta"desc="Front-End Web Developer" type="Course Specialization" img={<i class="fa-brands fa-meta"></i>} />
-                      <Aboutcertificatecard redirectTo="/certificates/google" provider="Google"desc="Programming in Python" type="Crash course" img={<i class="fa-brands fa-google"></i>} />
-                  </div>
-              </div>
         </div>
     </div>
   )
