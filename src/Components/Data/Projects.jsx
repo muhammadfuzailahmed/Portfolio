@@ -1,9 +1,16 @@
 import React from 'react'
 import ToDolistimg from '../../assets/Projects/JavaScript/ToDo/ToDolistimg.png'
+import ToDolistimg2 from '../../assets/Projects/JavaScript/ToDo/ToDolistimg2.png'
+import Todovideo from '../../assets/Projects/JavaScript/ToDo/Todovideo.mp4'
 import QuizApp from '../../assets/Projects/JavaScript/Quiz/QuizApp.jpg'
+import Quizappimg2 from '../../assets/Projects/JavaScript/Quiz/Quizappimg2.png'
+import Quizappvideo from '../../assets/Projects/JavaScript/Quiz/Quizappvideo.mp4'
 import ExpenseTracker from '../../assets/Projects/JavaScript/ExpenseTracker/ExpenseTracker.png'
+import ExpenseTrackerimg2 from '../../assets/Projects/JavaScript/ExpenseTracker/ExpenseTrackerimg2.png'
+import ExpenseTrackervideo from '../../assets/Projects/JavaScript/ExpenseTracker/ExpenseTrackervideo.mp4'
 import Img1 from '../../assets/Projects/JavaScript/WeatherApp/Img1.jpg'
 import Img2 from '../../assets/Projects/JavaScript/WeatherApp/Img2.jpg'
+import Weatherappvideo from '../../assets/Projects/JavaScript/WeatherApp/Weatherappvideo.mp4'
 import AdminPanel1 from '../../assets/Projects/JavaScript/SMS/AdminPanel1.png'
 import AdminPanel2 from '../../assets/Projects/JavaScript/SMS/AdminPanel2.png'
 import AdminPanel3 from '../../assets/Projects/JavaScript/SMS/AdminPanel3.png'
@@ -12,8 +19,21 @@ import Forgotpassword from '../../assets/Projects/JavaScript/SMS/Forgotpassword.
 import Loginpage from '../../assets/Projects/JavaScript/SMS/Loginpage.png'
 import Studentpanel1 from '../../assets/Projects/JavaScript/SMS/Studentpanel1.png'
 import Studentpanel2 from '../../assets/Projects/JavaScript/SMS/Studentpanel2.png'
+import SMSvideo from '../../assets/Projects/JavaScript/SMS/SMSvideo.mp4'
 import PasswordGenerator from '../../assets/Projects/React/PasswordGenerator/PasswordGenerator.png'
+import PasswordGeneratorimg2 from '../../assets/Projects/React/PasswordGenerator/PasswordGeneratorimg2.png'
+import PasswordGeneratorvideo from '../../assets/Projects/React/PasswordGenerator/PasswordGeneratorvideo.mp4'
 import Weatherappimg from '../../assets/Projects/React/WeatherApp/Weatherappimg.png'
+import Weatherappimg2 from '../../assets/Projects/React/WeatherApp/Weatherappimg2.png'
+import WeatherAppApivideo from '../../assets/Projects/React/WeatherApp/WeatherAppApivideo.mp4'
+import DocFindimg1 from '../../assets/Projects/React/DocFind/DocFindimg1.png'
+import DocFindimg2 from '../../assets/Projects/React/DocFind/DocFindimg2.png'
+import DocFindvideo from '../../assets/Projects/React/DocFind/DocFindvideo.mp4'
+import Techifyimg1 from '../../assets/Projects/React/TechifyStore/Techifyimg1.png'
+import Techifyimg2 from '../../assets/Projects/React/TechifyStore/Techifyimg2.png'
+import Techifyimg3 from '../../assets/Projects/React/TechifyStore/Techifyimg3.png'
+import Techifyimg4 from '../../assets/Projects/React/TechifyStore/Techifyimg4.png'
+import Techifyvideo from '../../assets/Projects/React/TechifyStore/Techifyvideo.mp4'
 
 
 export const Projects = [
@@ -21,7 +41,7 @@ export const Projects = [
         language: "JavaScript",
         liveDemo: "https://todo-list-using-java-script-phi.vercel.app/",
         sourceCode: "https://github.com/muhammadfuzailahmed/Todo-List-using-JavaScript", 
-        video: "video",
+        video: Todovideo,
         img: ToDolistimg,
         title: "To-Do List",
         shortDesc: "A simple and functional to-do list app that allows users to add, complete, and delete tasks, with data persistence using localStorage.",
@@ -49,13 +69,13 @@ export const Projects = [
             "Saving & retrieving data from localStorage.",
             "Deploying static apps on Vercel."
         ],
-        snapShots: [ToDolistimg]
+        snapShots: [ToDolistimg, ToDolistimg2]
     },
     {
         language: "JavaScript",
         liveDemo: "https://github.com/muhammadfuzailahmed/Quiz-App",
         sourceCode: "https://github.com/muhammadfuzailahmed/Quiz-App",
-        video: "video",
+        video: Quizappvideo,
         img: QuizApp,
         title: "Quiz App",
         shortDesc: "A simple quiz app with multiple-choice questions that provides instant feedback and displays the final score.",
@@ -83,13 +103,13 @@ export const Projects = [
             "Practiced managing the state of the quiz (score, answers) throughout the app.",
             "Applied conditions to check answers and update the score."
         ],
-        snapShots: [QuizApp]
+        snapShots: [QuizApp, Quizappimg2]
     },
     {
         language: "JavaScript",
         liveDemo: "https://expense-tracker-sooty-six-89.vercel.app/",
         sourceCode: "https://github.com/muhammadfuzailahmed/Expense-Tracker",
-        video: "video",
+        video: ExpenseTrackervideo,
         img: ExpenseTracker,
         title: "Expense Tracker",
         shortDesc: "A simple and responsive expense tracker app that allows users to add, delete, and manage expenses with automatic total calculation and local storage persistence.",
@@ -117,13 +137,13 @@ export const Projects = [
             "Using Local Storage effectively.",
             "Responsive web design basics."
         ],
-        snapShots: [ExpenseTracker]
+        snapShots: [ExpenseTracker, ExpenseTrackerimg2]
     },
     {
         language: "JavaScript",
         liveDemo: "https://weather-app-using-api-mocha.vercel.app/",
         sourceCode: "https://github.com/muhammadfuzailahmed/Weather-App-using-API",
-        video: "video",
+        video: Weatherappvideo,
         img: Img1,
         title: "Weather App (API based)",
         shortDesc: "A weather app that fetches real-time weather data for any city, allows Celsius ↔ Fahrenheit toggle, and displays key weather metrics with a clean UI.",
@@ -157,7 +177,7 @@ export const Projects = [
         language: "JavaScript",
         liveDemo: "https://student-managemnt-system-mu.vercel.app/",
         sourceCode: "https://github.com/muhammadfuzailahmed/Student-Managemnt-System",
-        video: "video",
+        video: SMSvideo,
         img: Loginpage,
         title: "Student Management System",
         shortDesc: "A web application with an admin panel for managing students and courses, and a student panel for course enrollment, fee management, and account management.",
@@ -191,7 +211,7 @@ export const Projects = [
         language: "ReactJs",
         liveDemo: "https://passwordgenerator-rust-gamma.vercel.app/",
         sourceCode: "https://github.com/muhammadfuzailahmed/Password-Generator",
-        video: "video",
+        video: PasswordGeneratorvideo,
         img: PasswordGenerator,
         title: "Password Generator",
         shortDesc: "A React-based Password Generator App that creates secure passwords with customizable length and character options.",
@@ -206,7 +226,7 @@ export const Projects = [
                 status: "Live"
             }
         ],
-        techSTack: ["React.JS", "Tailwind CSS"],
+        techSTack: ["React.JS", "React Router", "Tailwind CSS"],
         keyFeatures: [
             "Adjust password length with a slider.",
             "Include numbers and special characters.",
@@ -218,13 +238,13 @@ export const Projects = [
             "Gained experience in organizing a small React app using reusable components.",
             "Learned how to render changes in the UI instantly based on user input."
         ],
-        snapShots: [PasswordGenerator]
+        snapShots: [PasswordGenerator, PasswordGeneratorimg2]
     },
     {
         language: "ReactJs",
         liveDemo: "https://react-weather-app-api-based.vercel.app/",
         sourceCode: "https://github.com/muhammadfuzailahmed/React-Weather-App-API-based-",
-        video: "video",
+        video: WeatherAppApivideo,
         img: Weatherappimg,
         title: "Weather App (API based)",
         shortDesc: "A React-based Weather App that provides real-time weather information for any city with a clean and responsive interface.",
@@ -239,7 +259,7 @@ export const Projects = [
                 status: "Live"
             }
         ],
-        techSTack: ["React.JS", "Tailwind CSS"],
+        techSTack: ["React.JS", "React Router", "Tailwind CSS"],
         keyFeatures: [
             "Search for Cities: Get up-to-date weather information by simply entering a city name.",
             "Displays important weather details such as temperature, humidity, description and feels like values.",
@@ -251,7 +271,76 @@ export const Projects = [
             "Practiced rendering components based on API responses and user input.",
             "Improved skills in designing interfaces that work well across desktop and mobile devices."
         ],
-        snapShots: [Weatherappimg]
+        snapShots: [Weatherappimg, Weatherappimg2]
+    },
+    {
+        language: "ReactJs",
+        liveDemo: "https://doc-find-self.vercel.app/",
+        sourceCode: "https://github.com/muhammadfuzailahmed/DocFind",
+        video: DocFindvideo,
+        img: Weatherappimg,
+        title: "DocFind",
+        shortDesc: "DocFind is a doctor booking app that lets users browse profiles and book appointments. The Book Appointment button is a placeholder, showcasing routing, dynamic content, and user interactions.",
+        fullDesc: [
+            "DocFind is a doctor booking app designed to practice routing and UI design. The app allows users to browse through doctor profiles and explore their details. Although the Book Appointment feature is currently a placeholder, the app demonstrates routing and dynamic content rendering. This helps users navigate between different pages seamlessly, providing a dynamic and interactive experience.",
+            "Built using React and React Router, DocFind allows for smooth page transitions and efficient management of dynamic content. The UI is styled with Tailwind CSS, ensuring responsiveness and a clean, modern design. This project serves as a learning experience for building more complex front-end applications while refining skills like error handling, routing, and rendering content based on user actions."
+        ],
+        timeLine: [
+            {
+                duration: "4 days",
+                isCompleted: "True",
+                status: "Live"
+            }
+        ],
+        techSTack: ["React.JS", "React Router", "Tailwind CSS"],
+        keyFeatures: [
+            "Browse doctor profiles.",
+            "Book appointments (currently a placeholder).",
+            "Dynamic content rendering based on user interactions.",
+            "Clean routing and navigation across pages."
+        ],
+        learning: [
+            "Building clean routing/navigation with React Router.",
+            "Rendering dynamic content based on user actions.",
+            "Basic error handling in front-end development.",
+            "Creating dynamic pages with React and Tailwind CSS."
+        ],
+        snapShots: [DocFindimg2, DocFindimg1]
+    },
+    {
+        language: "ReactJs",
+        liveDemo: "https://tech-ecommerce-store-opal.vercel.app/",
+        sourceCode: "https://github.com/muhammadfuzailahmed/Tech-ecommerce-store",
+        video: Techifyvideo,
+        img: Techifyimg1,
+        title: "Techify (Tech E-commerce store)",
+        shortDesc: "Tech E-commerce Store is a React-based front-end platform offering a variety of gaming and professional tech accessories. It features a product catalog, detailed product pages, and toast notifications for adding items to the cart.",
+        fullDesc: [
+            "Tech E-commerce Store is a front-end application built with React, designed to provide users with an interactive shopping experience for tech accessories. The platform showcases a wide selection of gaming peripherals, such as keyboards, mice, and headphones, along with professional tech products like laptops bags and ergonomic desks. Each product page offers detailed descriptions, images, and prices to enhance the shopping experience. Users can easily add products to their cart, with toast notifications confirming each successful addition. However, the cart functionality is still in progress, with data persistence yet to be implemented.",
+            "The project utilizes React Router for seamless navigation between different pages and Toastify for displaying toast notifications. For state management, React Context or useState is used to handle the cart's content. The front-end is styled with CSS or SASS, ensuring a modern, responsive design. This project offers a comprehensive learning experience in building e-commerce platforms, refining skills in UI/UX design, state management, and handling dynamic content."
+        ],
+        timeLine: [
+            {
+                duration: "2 weeks",
+                isCompleted: "True",
+                status: "Live"
+            }
+        ],
+        techSTack: ["React.JS", "React Router", "Tailwind CSS", "Toastify"],
+        keyFeatures: [
+            "Product catalog with gaming and professional tech accessories.",
+            "Detailed product pages with images, descriptions, and prices.",
+            "Add to Cart feature with toast notifications.",
+            "Cart functionality under development (currently lacks data presence)."
+        ],
+        learning: [
+            "Building interactive e-commerce platforms with React.",
+            "Managing state with React Context or useState.",
+            "Implementing React Router for navigation.",
+            "Styling with CSS/SASS for a responsive UI.",
+            "Working with toast notifications to enhance user experience."
+        ],
+        snapShots: [Techifyimg1, Techifyimg2, Techifyimg3, Techifyimg4]
     },
     
 ]
