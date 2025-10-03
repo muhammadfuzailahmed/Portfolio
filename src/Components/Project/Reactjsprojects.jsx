@@ -159,10 +159,21 @@ function Reactjsprojects() {
     ]
 
   return (
-    <div className='w-full min-h-screen'>
+    <div className='w-full min-h-screen py-5'>
         {reactProjects.map(p => (
             <motion.div 
             key={p.shortDesc}
+            initial={{
+                opacity: 0,
+                y: 30
+            }}
+            whileInView={{
+                opacity: 1,
+                y: 0
+            }}
+            viewport={{
+                amount: 0.7
+            }}
             whileHover={{
             scale: 1.02,
             cursor: "pointer",

@@ -2,10 +2,17 @@ import React from 'react'
 import {motion} from 'motion/react'
 import { Link } from 'react-router-dom'
 import ToDolistimg from '../../assets/Projects/JavaScript/ToDo/ToDolistimg.png'
+import ToDolistimg2 from '../../assets/Projects/JavaScript/ToDo/ToDolistimg2.png'
+import Todovideo from '../../assets/Projects/JavaScript/ToDo/Todovideo.mp4'
 import QuizApp from '../../assets/Projects/JavaScript/Quiz/QuizApp.jpg'
+import Quizappimg2 from '../../assets/Projects/JavaScript/Quiz/Quizappimg2.png'
+import Quizappvideo from '../../assets/Projects/JavaScript/Quiz/Quizappvideo.mp4'
 import ExpenseTracker from '../../assets/Projects/JavaScript/ExpenseTracker/ExpenseTracker.png'
+import ExpenseTrackerimg2 from '../../assets/Projects/JavaScript/ExpenseTracker/ExpenseTrackerimg2.png'
+import ExpenseTrackervideo from '../../assets/Projects/JavaScript/ExpenseTracker/ExpenseTrackervideo.mp4'
 import Img1 from '../../assets/Projects/JavaScript/WeatherApp/Img1.jpg'
 import Img2 from '../../assets/Projects/JavaScript/WeatherApp/Img2.jpg'
+import Weatherappvideo from '../../assets/Projects/JavaScript/WeatherApp/Weatherappvideo.mp4'
 import AdminPanel1 from '../../assets/Projects/JavaScript/SMS/AdminPanel1.png'
 import AdminPanel2 from '../../assets/Projects/JavaScript/SMS/AdminPanel2.png'
 import AdminPanel3 from '../../assets/Projects/JavaScript/SMS/AdminPanel3.png'
@@ -14,6 +21,7 @@ import Forgotpassword from '../../assets/Projects/JavaScript/SMS/Forgotpassword.
 import Loginpage from '../../assets/Projects/JavaScript/SMS/Loginpage.png'
 import Studentpanel1 from '../../assets/Projects/JavaScript/SMS/Studentpanel1.png'
 import Studentpanel2 from '../../assets/Projects/JavaScript/SMS/Studentpanel2.png'
+import SMSvideo from '../../assets/Projects/JavaScript/SMS/SMSvideo.mp4'
 import Button from '../Button/Button'
 
 function Javascriptprojects() {
@@ -22,7 +30,7 @@ function Javascriptprojects() {
                 language: "JavaScript",
                 liveDemo: "https://todo-list-using-java-script-phi.vercel.app/",
                 sourceCode: "https://github.com/muhammadfuzailahmed/Todo-List-using-JavaScript", 
-                video: "video",
+                video: Todovideo,
                 img: ToDolistimg,
                 title: "To-Do List",
                 shortDesc: "A simple and functional to-do list app that allows users to add, complete, and delete tasks, with data persistence using localStorage.",
@@ -50,13 +58,13 @@ function Javascriptprojects() {
                     "Saving & retrieving data from localStorage.",
                     "Deploying static apps on Vercel."
                 ],
-                snapShots: [ToDolistimg]
+                snapShots: [ToDolistimg, ToDolistimg2]
         },
         {
                 language: "JavaScript",
                 liveDemo: "https://github.com/muhammadfuzailahmed/Quiz-App",
                 sourceCode: "https://github.com/muhammadfuzailahmed/Quiz-App",
-                video: "video",
+                video: Quizappvideo,
                 img: QuizApp,
                 title: "Quiz App",
                 shortDesc: "A simple quiz app with multiple-choice questions that provides instant feedback and displays the final score.",
@@ -84,13 +92,13 @@ function Javascriptprojects() {
                     "Practiced managing the state of the quiz (score, answers) throughout the app.",
                     "Applied conditions to check answers and update the score."
                 ],
-                snapShots: [QuizApp]
+                snapShots: [QuizApp, Quizappimg2]
         },
         {
                 language: "JavaScript",
                 liveDemo: "https://expense-tracker-sooty-six-89.vercel.app/",
                 sourceCode: "https://github.com/muhammadfuzailahmed/Expense-Tracker",
-                video: "video",
+                video: ExpenseTrackervideo,
                 img: ExpenseTracker,
                 title: "Expense Tracker",
                 shortDesc: "A simple and responsive expense tracker app that allows users to add, delete, and manage expenses with automatic total calculation and local storage persistence.",
@@ -118,13 +126,13 @@ function Javascriptprojects() {
                     "Using Local Storage effectively.",
                     "Responsive web design basics."
                 ],
-                snapShots: [ExpenseTracker]
+                snapShots: [ExpenseTracker, ExpenseTrackerimg2]
         },
         {
                 language: "JavaScript",
                 liveDemo: "https://weather-app-using-api-mocha.vercel.app/",
                 sourceCode: "https://github.com/muhammadfuzailahmed/Weather-App-using-API",
-                video: "video",
+                video: Weatherappvideo,
                 img: Img1,
                 title: "Weather App (API based)",
                 shortDesc: "A weather app that fetches real-time weather data for any city, allows Celsius ↔ Fahrenheit toggle, and displays key weather metrics with a clean UI.",
@@ -158,7 +166,7 @@ function Javascriptprojects() {
                 language: "JavaScript",
                 liveDemo: "https://student-managemnt-system-mu.vercel.app/",
                 sourceCode: "https://github.com/muhammadfuzailahmed/Student-Managemnt-System",
-                video: "video",
+                video: SMSvideo,
                 img: Loginpage,
                 title: "Student Management System",
                 shortDesc: "A web application with an admin panel for managing students and courses, and a student panel for course enrollment, fee management, and account management.",
@@ -189,10 +197,21 @@ function Javascriptprojects() {
         },
     ]
   return (
-    <div className='w-full min-h-screen'>
+    <div className='w-full min-h-screen py-5'>
         {Projects.map(p => (
             <motion.div 
             key={p.title}
+            initial={{
+                opacity: 0,
+                y: 30
+            }}
+            whileInView={{
+                opacity: 1,
+                y: 0
+            }}
+            viewport={{
+                amount: 0.7
+            }}
             whileHover={{
             scale: 1.02,
             cursor: "pointer",
