@@ -99,22 +99,12 @@ function Projectid() {
             delay: 1,
             duration: 0.5
         }}
-        className='my-8 md:w-[70%] w-[95%] md:h-120 h-68 m-auto bg-gray-600 rounded-sm'>
-
+        className='my-8 md:w-[70%] w-[95%] md:h-120 h-68 m-auto bg-gray-600 rounded-md'>
+            <video controls muted autoPlay src={project.video}></video>
         </motion.div>
 
         <motion.div 
-        initial={{
-            borderTopWidth: 0
-        }}
-        whileInView={{
-            borderTopWidth: 2
-        }}
-        viewport={{
-            once: "true",
-            amount: 0.5
-        }}
-        className=' border-white mt-20 md:flex justify-between md:px-10'>
+        className='mt-20 md:flex justify-between md:px-10'>
             <motion.div
             initial={{
                 opacity: 0,
@@ -158,24 +148,14 @@ function Projectid() {
                 <h1 className='dark:text-white font-bold text-3xl text-center'>Tech Stack</h1>
                 <div className='mt-10'>
                 {project.techSTack.map(tech => (
-                    <span className='dark:text-white ml-2 px-2 py-1 bg-gray-400 dark:bg-gray-600 font-bold cursor-pointer rounded-sm'>{tech}</span>
+                    <span className='dark:text-white ml-2 px-2 py-1 bg-gray-300 dark:bg-gray-600 font-bold cursor-pointer rounded-sm'>{tech}</span>
                 ))}
                 </div>
             </motion.div>
         </motion.div>
 
         <motion.div
-        initial={{
-            borderTopWidth: 0
-        }}
-        whileInView={{
-            borderTopWidth: 2
-        }}
-        viewport={{
-            once: "true",
-            amount: 0.5
-        }}
-        className='border-white mt-20 md:flex justify-between md:px-10'>
+        className='mt-20 md:flex justify-between md:px-10'>
             <motion.div 
             initial={{
                 opacity: 0,
@@ -243,17 +223,7 @@ function Projectid() {
         </motion.div>
 
         <motion.div
-        initial={{
-            borderTopWidth: 0
-        }}
-        whileInView={{
-            borderTopWidth: 2
-        }}
-        viewport={{
-            once: "true",
-            amount: 0.5
-        }} 
-        className='border-white mt-20 md:px-10'>
+        className='mt-20 md:px-10'>
             <motion.div
             initial={{
                 opacity: 0,
@@ -283,17 +253,7 @@ function Projectid() {
         </motion.div>
 
          <motion.div
-          initial={{
-            borderTopWidth: 0
-        }}
-        whileInView={{
-            borderTopWidth: 2
-        }}
-        viewport={{
-            once: "true",
-            amount: 0.5
-        }} 
-         className='border-white mt-20 md:px-10'>
+         className='mt-20 md:px-10'>
             <motion.div
             initial={{
                 opacity: 0,
@@ -315,10 +275,10 @@ function Projectid() {
             <h1 className='font-bold text-3xl dark:text-white mt-10'>Some Snapshots</h1>
             <div className='md:w-[40%] w-[100%] mt-10 m-auto'>
                     <div className='relative'>
-                        <p onClick={()=> move(-1)} className='font-bold dark:text-white absolute left-0 top-27 text-3xl cursor-pointer'><i class="fa-solid fa-angle-left"></i></p>
+                        <p onClick={()=> move(-1)} className='font-bold text-cyan-400 absolute left-0 md:top-32 top-21 text-3xl cursor-pointer'><i class="fa-solid fa-angle-left"></i></p>
                     </div>
                 <div className='relative'>
-                        <p onClick={()=> move(1)} className='font-bold dark:text-white absolute right-0 top-27 text-3xl cursor-pointer'><i class="fa-solid fa-angle-right"></i></p>
+                        <p onClick={()=> move(1)} className='font-bold text-cyan-400 absolute right-0 md:top-32 top-21 text-3xl cursor-pointer'><i class="fa-solid fa-angle-right"></i></p>
                     </div>
                 <div ref={ImgRef} className='flex flex-nowrap overflow-x-auto scroll-smooth py-2 no-scrollbar'>
                 {project.snapShots.map(pic => (
@@ -331,17 +291,7 @@ function Projectid() {
                 
 
         <motion.div
-         initial={{
-            borderTopWidth: 0
-        }}
-        whileInView={{
-            borderTopWidth: 2
-        }}
-        viewport={{
-            once: "true",
-            amount: 0.5
-        }} 
-        className='border-white mt-10 md:px-10 py-10'>
+        className='mt-10 md:px-10 py-10'>
             <NavHashLink to="/#projects">
             <motion.p 
             initial={{
@@ -357,7 +307,7 @@ function Projectid() {
                 once: "true",
                 amount: 0.9
             }}
-            className='dark:text-white transition-all hover:text-gray-500 cursor-pointer'><span className='mr-5'><i class="fa-solid fa-arrow-left"></i></span> Back</motion.p></NavHashLink>
+            className='dark:text-white transition-all hover:text-gray-500 cursor-pointer inline-block'><span className='mr-5'><i class="fa-solid fa-arrow-left"></i></span> Back</motion.p></NavHashLink>
         </motion.div>
         </div>
     </div>
