@@ -31,7 +31,7 @@ function Projects() {
   return (
     <div className='w-full min-h-screen dark:bg-[#0d0e0e]'>
         <NavHashLink to="/#projects">
-            <p className='dark:text-white transition-all hover:text-gray-500 cursor-pointer ml-[4vw] pt-5 '><span className='mr-5'><i class="fa-solid fa-arrow-left"></i></span> Back</p></NavHashLink>
+            <p className='dark:text-white transition-all hover:text-gray-500 cursor-pointer ml-[4vw] pt-5 inline-block'><span className='mr-5'><i class="fa-solid fa-arrow-left"></i></span> Back</p></NavHashLink>
         <div className='md:mt-0 mt-3 flex items-center justify-center'>
             <ul className='flex md:gap-6 gap-4 mb-5'>
                 {tabs.map(t => (
