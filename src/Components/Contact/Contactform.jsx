@@ -60,7 +60,7 @@ function Contactform() {
         transition={{
           duration: 0.5
         }}
-          className='dark:text-white transition-all hover:text-gray-500 cursor-pointer md:ml-10 ml-5 md:pt-0 pt-4'><span className='mr-3'><i class="fa-solid fa-arrow-left"></i></span> Back</motion.p>
+          className='dark:text-white transition-all hover:text-gray-500 cursor-pointer md:ml-10 ml-5 md:pt-0 pt-4 inline-block'><span className='mr-3'><i class="fa-solid fa-arrow-left"></i></span> Back</motion.p>
       </NavHashLink>
       <motion.div
       initial={{
