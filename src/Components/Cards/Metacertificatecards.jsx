@@ -17,7 +17,7 @@ function Certificatecards() {
   return (
     <div className='w-full dark:bg-[#0d0e0e] pb-5'>
             <NavHashLink to="/#certificates">
-                <p className='dark:text-white transition-all hover:text-gray-500 cursor-pointer ml-10'><span className='mr-3'><i class="fa-solid fa-arrow-left"></i></span> Back</p>
+                <p className='dark:text-white transition-all hover:text-gray-500 cursor-pointer ml-10 inline-block'><span className='mr-3'><i class="fa-solid fa-arrow-left"></i></span> Back</p>
             </NavHashLink>
             <motion.div
             initial={{
@@ -58,7 +58,7 @@ function Certificatecards() {
                 }}
                 className='border-2 border-cyan-400 p-2 mb-2 h-full flex flex-col rounded-sm'>
                     <h2 className='dark:text-white mb-2 text-center text-xl'><span className='text-blue-600'>{card.img}</span> {card.provider} &#xb7; {card.platform}</h2>
-                    <hr className='bg-gray-700 h-1 my-1' />
+                    <hr className='dark:bg-gray-700 h-1 my-1' />
                     <h1 className='dark:text-white font-bold text-lg mb-4 text-center'>{card.title}</h1>
                     <p className='my-3 flex flex-wrap gap-2 justify-center'>{card.learnedObjectives.map(obj => (
                         <span className='dark:text-white px-2 py-1 mx-1 my-1 dark:bg-gray-500 bg-gray-300'>{obj}</span>
