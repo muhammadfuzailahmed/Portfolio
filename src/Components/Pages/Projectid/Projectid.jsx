@@ -4,7 +4,7 @@ import { Projects } from '../../Data/Projects'
 import Button from '../../Button/Button';
 import { Link } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
-import {motion} from "motion/react";
+import {motion, scale, transform} from "motion/react";
 
 
 const normalize = s => decodeURIComponent(s).trim().toLowerCase();
@@ -41,7 +41,7 @@ function Projectid() {
             opacity: 1,
             y: 0
         }}
-        className='md:flex items-center justify-between px-10'>
+        className='md:flex items-center justify-between md:px-10 px-5'>
             <Link to="/projects">
             <p className='dark:text-white transition-all hover:text-gray-500 cursor-pointer'><span className='mr-5'><i class="fa-solid fa-arrow-left"></i></span> Explore more projects</p></Link>
             <div className='md:mt-0 mt-5 md:flex-row flex'>
@@ -55,7 +55,7 @@ function Projectid() {
                     </span>
             </div>
         </motion.div>
-        <div className='px-10 mt-8'>
+        <div className='md:px-10 px-5 mt-8'>
         <motion.h1
         initial={{
             opacity: 0,
@@ -68,7 +68,7 @@ function Projectid() {
         transition={{
             duration: 0.5
         }}
-        className='dark:text-white font-bold text-4xl'>{project.title}</motion.h1>
+        className='dark:text-white font-bold text-4xl md:mb-0 mb-3'>{project.title}</motion.h1>
         <motion.p
         initial={{
             opacity: 0,
@@ -82,7 +82,7 @@ function Projectid() {
             delay: 0.5,
             duration: 0.5
         }}
-        className='mt-2 dark:text-white'>{project.shortDesc}</motion.p>
+        className='mt-2 dark:text-white text-justify'>{project.shortDesc}</motion.p>
         <motion.div 
         initial={{
             opacity: 0,
@@ -99,8 +99,8 @@ function Projectid() {
             delay: 1,
             duration: 0.5
         }}
-        className='my-8 md:w-[70%] w-[95%] md:h-120 h-68 m-auto bg-gray-600 rounded-md'>
-            <video controls muted autoPlay src={project.video}></video>
+        className='my-8 md:w-[70%] w-[95%] md:h-120 h-68 m-auto rounded-md'>
+            <video controls muted autoPlay className='h-[100%] rounded-md' src={project.video}></video>
         </motion.div>
 
         <motion.div 
@@ -146,7 +146,7 @@ function Projectid() {
             }}
             className='mt-10 md:w-[30%] md:text-center'>
                 <h1 className='dark:text-white font-bold text-3xl text-center'>Tech Stack</h1>
-                <div className='mt-10'>
+                <div className='mt-10 text-center'>
                 {project.techSTack.map(tech => (
                     <span className='dark:text-white ml-2 px-2 py-1 bg-gray-300 dark:bg-gray-600 font-bold cursor-pointer rounded-sm'>{tech}</span>
                 ))}
@@ -172,9 +172,9 @@ function Projectid() {
             transition={{
                 duration: 0.5
             }}
-            className='md:w-[70%] mt-10'>
-                <h1 className='dark:text-white font-bold text-3xl md:text-left text-center'>Key Features</h1>
-                <ul className='w-[90%]'>
+            className='md:w-[70%] mt-10 w-[90%] m-auto'>
+                <h1 className='dark:text-white font-bold text-3xl md:text-left text-center md:mb-0 mb-10'>Key Features</h1>
+                <ul className='md:w-[90%]'>
                 {project.keyFeatures.map(feature => (
                     <li className='mt-2 dark:text-white list-disc'>{feature}</li>
                 ))}
@@ -242,9 +242,8 @@ function Projectid() {
                 duration: 0.5
             }}
             >
-            <h1 className='font-bold text-3xl dark:text-white mt-10'>What I learned</h1>
-            <div className='mt-5'>
-
+            <h1 className='font-bold text-3xl dark:text-white mt-10 md:text-left text-center'>What I learned</h1>
+            <div className='mt-5 md:w-auto w-[90%] m-auto'>
                 {project.learning.map(learned => (
                 <li className='mt-2 dark:text-white list-disc'>{learned}</li>
             ))}
@@ -282,7 +281,7 @@ function Projectid() {
                     </div>
                 <div ref={ImgRef} className='flex flex-nowrap overflow-x-auto scroll-smooth py-2 no-scrollbar'>
                 {project.snapShots.map(pic => (
-                    <img className='border-2 border-cyan-400 h-48 md:h-68 w-[100%] flex-none rounded-lg md:object-cover shadow-sm cursor-pointer' src={pic} alt="img" />
+                    <motion.img className='border-2 border-cyan-400 h-48 md:h-68 w-[100%] flex-none rounded-lg md:object-cover shadow-sm cursor-pointer' src={pic} alt="img" />
                 ))}    
                 </div>
             </div>
