@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import {motion} from 'motion/react'
-import Mainvideo from '../../assets/Mainvideo.mp4'
+import ShopSpherevideo from '../../assets/Projects/React/ShopSphere/ShopSpherevideo.mp4'
 import Button from '../Button/Button'
 import { toast } from 'react-toastify';
 import { NavHashLink } from 'react-router-hash-link';
@@ -106,7 +106,7 @@ function Hero() {
                 </motion.div>
             </div>
             {/* right */}
-            <div className='md:w-[30vw] w-[95vw] md:m-0 m-auto md:h-[50vh] relative md:mt-0 mt-15'>
+            <div className='md:w-[33vw] w-[95vw] md:m-0 m-auto md:h-[50vh] relative md:mt-0 mt-15'>
                 <motion.video
                 initial={{
                     opacity: 0,
@@ -124,7 +124,7 @@ function Hero() {
                     delay: 1.5,
                     duration: 0.5
                 }}
-                loop autoPlay muted className='w-[100%] h-[100%] object-cover rounded-lg cursor-pointer' src={Mainvideo}></motion.video>
+                loop autoPlay muted className='w-[100%] h-[100%]  rounded-lg cursor-pointer' src={ShopSpherevideo}></motion.video>
             </div>
         </div>
         {
