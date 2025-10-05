@@ -27,7 +27,7 @@ function Contact() {
             border: "1px solid oklch(78.9% 0.154 211.53)"
         }}
         viewport={{
-            amount: 0.6,
+            amount: 0.9,
             once: "true"
         }}
         transition={{
