@@ -34,6 +34,10 @@ import Techifyimg2 from '../../assets/Projects/React/TechifyStore/Techifyimg2.pn
 import Techifyimg3 from '../../assets/Projects/React/TechifyStore/Techifyimg3.png'
 import Techifyimg4 from '../../assets/Projects/React/TechifyStore/Techifyimg4.png'
 import Techifyvideo from '../../assets/Projects/React/TechifyStore/Techifyvideo.mp4'
+import ShopSphereimg1 from '../../assets/Projects/React/ShopSphere/ShopSphereimg1.png'
+import ShopSphereimg2 from '../../assets/Projects/React/ShopSphere/ShopSphereimg2.png'
+import ShopSphereimg3 from '../../assets/Projects/React/ShopSphere/ShopSphereimg3.png'
+import ShopSpherevideo from '../../assets/Projects/React/ShopSphere/ShopSpherevideo.mp4'
 
 
 export const Projects = [
@@ -341,6 +345,44 @@ export const Projects = [
             "Working with toast notifications to enhance user experience."
         ],
         snapShots: [Techifyimg1, Techifyimg2, Techifyimg3, Techifyimg4]
+    },
+    {
+        language: "ReactJs",
+        liveDemo: "https://tech-ecommerce-store-opal.vercel.app/",
+        sourceCode: "https://github.com/muhammadfuzailahmed/Tech-ecommerce-store",
+        video: ShopSpherevideo,
+        img: ShopSphereimg1,
+        title: "ShopSphere E-commerce",
+        shortDesc: "ShopSphere is a e-commerce platform offering fashion items with login/signup, add to cart, account management, and order history, all in a responsive interface.",
+        fullDesc: [
+            "ShopSphere is a modern e-commerce platform designed to provide a seamless shopping experience. The app showcases a curated selection of fashion items for men and women, including boots, T-shirts, shoes, and watches. Each product comes with filtering options, allowing users to easily find items based on their preferences. Users can create accounts, log in, and manage their personal details, ensuring a personalized shopping experience.",
+            "The platform also features a complete shopping workflow: users can add items to their cart, view order history, and reset forgotten passwords if necessary. Built entirely with React JS and using localStorage for data persistence, ShopSphere demonstrates how front-end technologies can be leveraged to create an interactive, dynamic, and user-friendly online store. This project emphasizes responsive design, smooth navigation, and practical functionality for everyday e-commerce needs."
+        ],
+        timeLine: [
+            {
+                duration: "2 weeks",
+                isCompleted: "True",
+                status: "Live"
+            }
+        ],
+        techSTack: ["React.JS", "React Router", "Tailwind CSS"],
+        keyFeatures: [
+            "User authentication: Login and Signup.",
+            "Account management and personal details.",
+            "Add to Cart functionality.",
+            "Filter products by category and type.",
+            "Forgot password and reset password workflow.",
+            "Order history tracking.",
+            "Responsive UI for smooth navigation."
+        ],
+        learning: [
+            "Building full-featured front-end e-commerce applications.",
+            "Managing user state and data persistence with localStorage.",
+            "Implementing authentication workflows and password management.",
+            "Designing responsive UI and filtering functionality.",
+            "Handling dynamic content and interactive components in React."
+        ],
+        snapShots: [ShopSphereimg1, ShopSphereimg2, ShopSphereimg3]
     },
     
 ]
