@@ -4,7 +4,7 @@ import Button from '../Button/Button'
 import { Link } from 'react-router-dom'
 import Loginpage from '../../assets/Projects/JavaScript/SMS/Loginpage.png'
 import ShopSphereThumbnail from '../../assets/Projects/React/ShopSphere/ShopSphereThumbnail.png'
-import Img4 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/Img4.png'
+import BMSImg4 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/BMSImg4.png'
 
 
 function Project() {
@@ -81,7 +81,7 @@ function Project() {
                 language: "C#",
                 liveDemo: "https://tech-ecommerce-store-opal.vercel.app/",
                 sourceCode: "https://github.com/muhammadfuzailahmed/Banking-Management-System",
-                img: Img4,
+                img: BMSImg4,
                 title: "Banking Management System",
                 shortDesc: "A Banking Management System in C# with SQL Server, offering user authentication, account management, and functions like deposit, withdrawal, and balance inquiry.",
                 fullDesc: [
@@ -109,7 +109,7 @@ function Project() {
                     "Using Git & GitHub for version control.",
                     "Applying Object-Oriented Programming concepts in a practical project."
                 ],
-                snapShots: [Img4]
+                snapShots: [BMSImg4]
         },
     ]
   return (

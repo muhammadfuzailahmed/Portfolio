@@ -38,12 +38,12 @@ import ShopSphereimg1 from '../../assets/Projects/React/ShopSphere/ShopSphereimg
 import ShopSphereimg2 from '../../assets/Projects/React/ShopSphere/ShopSphereimg2.png'
 import ShopSphereimg3 from '../../assets/Projects/React/ShopSphere/ShopSphereimg3.png'
 import ShopSpherevideo from '../../assets/Projects/React/ShopSphere/ShopSpherevideo.mp4'
-import Img1 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/Img1.png'
-import Img2 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/Img2.png'
-import Img3 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/Img3.png'
-import Img4 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/Img4.png'
-import Img5 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/Img5.png'
-import Img6 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/Img6.png'
+import BMSImg1 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/BMSImg1.png'
+import BMSImg2 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/BMSImg2.png'
+import BMSImg3 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/BMSImg3.png'
+import BMSImg4 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/BMSImg4.png'
+import BMSImg5 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/BMSImg5.png'
+import BMSImg6 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/BMSImg6.png'
 import BankingManagementSystemvideo from '../../assets/Projects/ManagementSystems/BankingManagementSystem/BankingManagementSystemvideo.mp4'
 
 export const Projects = [
@@ -396,7 +396,7 @@ export const Projects = [
         liveDemo: "https://tech-ecommerce-store-opal.vercel.app/",
         sourceCode: "https://github.com/muhammadfuzailahmed/Banking-Management-System",
         video: BankingManagementSystemvideo,
-        img: Img1,
+        img: BMSImg1,
         title: "Banking Management System",
         shortDesc: "A Banking Management System built with C# Windows Forms and SQL Server, featuring user authentication, account management, and basic banking operations like deposit, withdrawal, and balance inquiry.",
         fullDesc: [
@@ -424,6 +424,6 @@ export const Projects = [
             "Using Git & GitHub for version control.",
             "Applying Object-Oriented Programming concepts in a practical project."
         ],
-        snapShots: [Img1, Img2, Img3, Img4, Img5, Img6]
+        snapShots: [BMSImg1, BMSImg2, BMSImg3, BMSImg4, BMSImg5, BMSImg6]
     },
 ]
