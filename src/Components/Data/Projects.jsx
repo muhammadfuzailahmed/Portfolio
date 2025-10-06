@@ -38,12 +38,12 @@ import ShopSphereimg1 from '../../assets/Projects/React/ShopSphere/ShopSphereimg
 import ShopSphereimg2 from '../../assets/Projects/React/ShopSphere/ShopSphereimg2.png'
 import ShopSphereimg3 from '../../assets/Projects/React/ShopSphere/ShopSphereimg3.png'
 import ShopSpherevideo from '../../assets/Projects/React/ShopSphere/ShopSpherevideo.mp4'
-import img1 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/img1.png'
-import img2 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/img2.png'
-import img3 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/img3.png'
-import img4 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/img4.png'
-import img5 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/img5.png'
-import img6 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/img6.png'
+import Img1 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/Img1.png'
+import Img2 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/Img2.png'
+import Img3 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/Img3.png'
+import Img4 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/Img4.png'
+import Img5 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/Img5.png'
+import Img6 from '../../assets/Projects/ManagementSystems/BankingManagementSystem/Img6.png'
 import BankingManagementSystemvideo from '../../assets/Projects/ManagementSystems/BankingManagementSystem/BankingManagementSystemvideo.mp4'
 
 export const Projects = [
@@ -396,7 +396,7 @@ export const Projects = [
         liveDemo: "https://tech-ecommerce-store-opal.vercel.app/",
         sourceCode: "https://github.com/muhammadfuzailahmed/Banking-Management-System",
         video: BankingManagementSystemvideo,
-        img: img1,
+        img: Img1,
         title: "Banking Management System",
         shortDesc: "A Banking Management System built with C# Windows Forms and SQL Server, featuring user authentication, account management, and basic banking operations like deposit, withdrawal, and balance inquiry.",
         fullDesc: [
@@ -424,6 +424,6 @@ export const Projects = [
             "Using Git & GitHub for version control.",
             "Applying Object-Oriented Programming concepts in a practical project."
         ],
-        snapShots: [img1, img2, img3, img4, img5, img6]
+        snapShots: [Img1, Img2, Img3, Img4, Img5, Img6]
     },
 ]
