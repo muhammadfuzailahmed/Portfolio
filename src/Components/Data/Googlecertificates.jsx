@@ -7,7 +7,7 @@ const Googlecertificates = [
             provider: "Google",
             platform: "Coursera",
             learnedObjectives: ["Syntax", "Lists", "Dictionaries"],
-            verifyAt: "https://coursera.org/verify/16959QRYAV1I"
+            verifyAt: "https://www.coursera.org/account/accomplishments/verify/BQU4G0FVZ5TN"
         }
 ]
 
