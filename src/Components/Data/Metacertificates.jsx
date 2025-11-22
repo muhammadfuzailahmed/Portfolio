@@ -49,6 +49,23 @@ const Metacertificates = [
             learnedObjectives: ["Components", "Props", "Events"],
             verifyAt: "https://coursera.org/verify/SGVYU5NZK7S5"
         },
+
+        {
+            img: <i class="fa-brands fa-meta"></i>,
+            title: "Principles of UX/UI Design",
+            provider: "Meta",
+            platform: "Coursera",
+            learnedObjectives: ["User Research", "Interactive Design", "Web Design"],
+            verifyAt: "https://coursera.org/verify/CA3NGJDGSOTJ"
+        },
+        {
+            img: <i class="fa-brands fa-meta"></i>,
+            title: "Coding Interview Preparation",
+            provider: "Meta",
+            platform: "Coursera",
+            learnedObjectives: ["Data Structures", "Algorithms", "Pseudocode"],
+            verifyAt: "https://coursera.org/verify/CA3NGJDGSOTJ"
+        },
 ]
 
 
