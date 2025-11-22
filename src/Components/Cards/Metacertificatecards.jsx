@@ -17,7 +17,7 @@ function Certificatecards() {
   return (
     <div className='w-full dark:bg-[#0d0e0e] pb-5'>
             <NavHashLink to="/#certificates">
-                <p className='dark:text-white transition-all hover:text-gray-500 cursor-pointer ml-10 inline-block'><span className='mr-3'><i class="fa-solid fa-arrow-left"></i></span> Back</p>
+                <p className='dark:text-white transition-all hover:text-gray-500 cursor-pointer ml-10 inline-block mt-4'><span className='mr-3'><i class="fa-solid fa-arrow-left"></i></span> Back</p>
             </NavHashLink>
             <motion.div
             initial={{
