@@ -58,39 +58,39 @@ function Reactjsprojects() {
                 ],
                 snapShots: [PasswordGenerator, PasswordGeneratorimg2]
         },
-        {
-                language: "ReactJs",
-                liveDemo: "https://react-weather-app-api-based.vercel.app/",
-                sourceCode: "https://github.com/muhammadfuzailahmed/React-Weather-App-API-based-",
-                video: WeatherAppApivideo,
-                img: Weatherappimg,
-                title: "Weather App (API based)",
-                shortDesc: "A React-based Weather App that provides real-time weather information for any city with a clean and responsive interface.",
-                fullDesc: [
-                    "This Weather App, built with React, allows users to search for any city and get real-time weather data from an API. It displays important metrics such as temperature, humidity, weather description, and feels like values. The app features a clean and simple interface, making it easy for users to find the information they need quickly and intuitively.",
-                    "Building this project helped me strengthen my skills in React and API integration. I gained practical experience in managing state, fetching and displaying dynamic data, and designing a responsive user interface. This project also improved my understanding of how to structure React components effectively while creating an interactive and functional web application."
-                ],
-                timeLine: [
-                    {
-                        duration: "3 weeks",
-                        isCompleted: "True",
-                        status: "Live"
-                    }
-                ],
-                techSTack: ["React.JS", "Tailwind CSS"],
-                keyFeatures: [
-                    "Search for Cities: Get up-to-date weather information by simply entering a city name.",
-                    "Displays important weather details such as temperature, humidity, description and feels like values.",
-                    "Designed for an easy and intuitive user experience."
-                ],
-                learning: [
-                    "Learned to handle dynamic data and update the UI accordingly.",
-                    "Gained experience fetching and displaying data from a REST API.",
-                    "Practiced rendering components based on API responses and user input.",
-                    "Improved skills in designing interfaces that work well across desktop and mobile devices."
-                ],
-                snapShots: [Weatherappimg, Weatherappimg2]
-        },
+        // {
+        //         language: "ReactJs",
+        //         liveDemo: "https://react-weather-app-api-based.vercel.app/",
+        //         sourceCode: "https://github.com/muhammadfuzailahmed/React-Weather-App-API-based-",
+        //         video: WeatherAppApivideo,
+        //         img: Weatherappimg,
+        //         title: "Weather App (API based)",
+        //         shortDesc: "A React-based Weather App that provides real-time weather information for any city with a clean and responsive interface.",
+        //         fullDesc: [
+        //             "This Weather App, built with React, allows users to search for any city and get real-time weather data from an API. It displays important metrics such as temperature, humidity, weather description, and feels like values. The app features a clean and simple interface, making it easy for users to find the information they need quickly and intuitively.",
+        //             "Building this project helped me strengthen my skills in React and API integration. I gained practical experience in managing state, fetching and displaying dynamic data, and designing a responsive user interface. This project also improved my understanding of how to structure React components effectively while creating an interactive and functional web application."
+        //         ],
+        //         timeLine: [
+        //             {
+        //                 duration: "3 weeks",
+        //                 isCompleted: "True",
+        //                 status: "Live"
+        //             }
+        //         ],
+        //         techSTack: ["React.JS", "Tailwind CSS"],
+        //         keyFeatures: [
+        //             "Search for Cities: Get up-to-date weather information by simply entering a city name.",
+        //             "Displays important weather details such as temperature, humidity, description and feels like values.",
+        //             "Designed for an easy and intuitive user experience."
+        //         ],
+        //         learning: [
+        //             "Learned to handle dynamic data and update the UI accordingly.",
+        //             "Gained experience fetching and displaying data from a REST API.",
+        //             "Practiced rendering components based on API responses and user input.",
+        //             "Improved skills in designing interfaces that work well across desktop and mobile devices."
+        //         ],
+        //         snapShots: [Weatherappimg, Weatherappimg2]
+        // },
         {
                 language: "ReactJs",
                 liveDemo: "https://doc-find-self.vercel.app/",
