@@ -1,12 +1,58 @@
-# React + Vite
+# Personal Portfolio Website  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and minimal portfolio website built using **React + Vite**, showcasing my projects, skills, and journey as a growing web & software developer.  
+This portfolio reflects my learning progress over the past months and serves as my digital identity for employers, clients, and collaborators.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** https://portfolio-three-beta-19.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Overview  
 
-## Expanding the ESLint configuration
+This portfolio is designed to be clean, fast, and visually engaging.  
+It includes:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Hero section introducing who I am  
+- Skills section  
+- Projects showcase  
+- Contact / socials  
+- Fully responsive layout  
+- Smooth UI / animations depending on final implementation  
+
+This serves as my personal space to show my development skills and growth.
+
+## 🛠️ Tech Stack  
+
+**Frontend:**  
+- React.js  
+- Vite  
+- JavaScript
+- HTML5  
+- CSS3  
+
+**Deployment:**  
+- Vercel: https://portfolio-three-beta-19.vercel.app/
+
+ ## Features
+
+- Modern UI with React components
+- Responsive design
+- Clean and simple navigation
+- Smooth scrolling
+- Highlighted skills & projects
+- Fast loading powered by Vite
+- Optimized for performance
+
+## Purpose
+
+I have built this portfolio to:
+- Represent myself professionally online
+- Showcase my development work
+- Track my progress as I learn more languages & frameworks
+- Prepare for internships and job opportunities
+- Practice React, Vite, and modern front-end architecture
+
+## Roadmap / Future Updates
+
+- Add App development projects
+- Add more React/JS projects
+- Include backend/API projects
+- Create a blog section
