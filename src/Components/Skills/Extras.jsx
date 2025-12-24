@@ -10,11 +10,11 @@ function Extras() {
     },
     {
         label: "Data Structures & Algorithm",
-        completed: "40%"
+        completed: "70%"
     },
     {
-        label: "App Development",
-        completed: "20%"
+        label: "Cross Platform App Development",
+        completed: "80%"
     }
 ]
 
