@@ -13,7 +13,7 @@ function Extras() {
         completed: "70%"
     },
     {
-        label: "Cross Platform App Development",
+        label: "App Development",
         completed: "80%"
     }
 ]
