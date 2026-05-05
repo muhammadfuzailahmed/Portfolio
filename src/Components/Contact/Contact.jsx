@@ -20,14 +20,16 @@ function Contact() {
     <div className='w-full min-h-[80vh] dark:bg-[#0d0e0e] md:pt-10 pt-20'>
         <motion.div
         initial={{
-            width: 0,
+            y: 60,
+            opacity: 0
         }}
         whileInView={{
-            width: "80vw",
+            y: 0,
+            opacity: 1,
             border: "1px solid oklch(78.9% 0.154 211.53)"
         }}
         viewport={{
-            amount: 0.9,
+            amount: 0.4,
             once: "true"
         }}
         transition={{
