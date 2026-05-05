@@ -19,7 +19,6 @@ import Forgotpassword from '../../assets/Projects/JavaScript/SMS/Forgotpassword.
 import Loginpage from '../../assets/Projects/JavaScript/SMS/Loginpage.png'
 import Studentpanel1 from '../../assets/Projects/JavaScript/SMS/Studentpanel1.png'
 import Studentpanel2 from '../../assets/Projects/JavaScript/SMS/Studentpanel2.png'
-import SMSvideo from '../../assets/Projects/JavaScript/SMS/SMSvideo.mp4'
 import PasswordGenerator from '../../assets/Projects/React/PasswordGenerator/PasswordGenerator.png'
 import PasswordGeneratorimg2 from '../../assets/Projects/React/PasswordGenerator/PasswordGeneratorimg2.png'
 import PasswordGeneratorvideo from '../../assets/Projects/React/PasswordGenerator/PasswordGeneratorvideo.mp4'
@@ -187,7 +186,7 @@ export const Projects = [
         language: "JavaScript",
         liveDemo: "https://student-managemnt-system-mu.vercel.app/",
         sourceCode: "https://github.com/muhammadfuzailahmed/Student-Managemnt-System",
-        video: SMSvideo,
+        video: "https://res.cloudinary.com/dqz0yxezk/video/upload/v1778000005/SMSvideo_tbskwu.mp4",
         img: Loginpage,
         title: "Student Management System",
         shortDesc: "A web application with an admin panel for managing students and courses, and a student panel for course enrollment, fee management, and account management.",

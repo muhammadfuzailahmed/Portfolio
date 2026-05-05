@@ -166,7 +166,7 @@ function Javascriptprojects() {
                 language: "JavaScript",
                 liveDemo: "https://student-managemnt-system-mu.vercel.app/",
                 sourceCode: "https://github.com/muhammadfuzailahmed/Student-Managemnt-System",
-                video: SMSvideo,
+                video: "https://res.cloudinary.com/dqz0yxezk/video/upload/v1778000005/SMSvideo_tbskwu.mp4",
                 img: Loginpage,
                 title: "Student Management System",
                 shortDesc: "A web application with an admin panel for managing students and courses, and a student panel for course enrollment, fee management, and account management.",
