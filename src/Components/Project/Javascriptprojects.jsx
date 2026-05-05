@@ -21,7 +21,6 @@ import Forgotpassword from '../../assets/Projects/JavaScript/SMS/Forgotpassword.
 import Loginpage from '../../assets/Projects/JavaScript/SMS/Loginpage.png'
 import Studentpanel1 from '../../assets/Projects/JavaScript/SMS/Studentpanel1.png'
 import Studentpanel2 from '../../assets/Projects/JavaScript/SMS/Studentpanel2.png'
-import SMSvideo from '../../assets/Projects/JavaScript/SMS/SMSvideo.mp4'
 import Button from '../Button/Button'
 
 function Javascriptprojects() {
