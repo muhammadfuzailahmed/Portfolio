@@ -161,7 +161,7 @@ function Projectid() {
             <h1 className="dark:text-white font-bold text-3xl md:text-left text-center">
               Description
             </h1>
-            {project.fullDesc.map((desc) => (
+            {project.fullDesc?.map((desc) => (
               <p className="mt-3 dark:text-white md:text-left text-justify">
                 {desc}
               </p>
@@ -189,13 +189,16 @@ function Projectid() {
             <h1 className="dark:text-white font-bold text-3xl text-center">
               Tech Stack
             </h1>
-            <div className="mt-10 text-center">
-              {project.techSTack.map((tech) => (
-                <span className="dark:text-white ml-2 px-2 py-1 bg-gray-300 dark:bg-gray-600 font-bold cursor-pointer rounded-sm">
-                  {tech}
-                </span>
-              ))}
-            </div>
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-2">
+  {project.techSTack?.map((tech) => (
+    <span
+      key={tech}
+      className="inline-flex items-center rounded-md bg-gray-200 px-3 py-1.5 text-sm font-semibold text-gray-800 transition-colors hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+    >
+      {tech}
+    </span>
+  ))}
+</div>
           </motion.div>
         </motion.div>
 
@@ -222,7 +225,7 @@ function Projectid() {
               Key Features
             </h1>
             <ul className="md:w-[90%]">
-              {project.keyFeatures.map((feature) => (
+              {project.keyFeatures?.map((feature) => (
                 <li className="mt-2 dark:text-white list-disc">{feature}</li>
               ))}
             </ul>
@@ -251,7 +254,7 @@ function Projectid() {
             </h1>
             <div className="mt-10">
               <ul>
-                {project.timeLine.map((timeline) => (
+                {project.timeLine?.map((timeline) => (
                   <div className="w-86 m-auto">
                     <div className="dark:text-white font-bold rounded-sm w-86 mb-2 flex items-center justify-between text-lg border-b-2 border-gray-500">
                       <p>Duration:</p>
@@ -295,7 +298,7 @@ function Projectid() {
               What I learned
             </h1>
             <div className="mt-5 md:w-auto w-[90%] m-auto">
-              {project.learning.map((learned) => (
+              {project.learning?.map((learned) => (
                 <li className="mt-2 dark:text-white list-disc">{learned}</li>
               ))}
             </div>
@@ -345,7 +348,7 @@ function Projectid() {
                 ref={ImgRef}
                 className="flex flex-nowrap overflow-x-auto scroll-smooth py-2 no-scrollbar"
               >
-                {project.snapShots.map((pic) => (
+                {project.snapShots?.map((pic) => (
                   <motion.img
                     onClick={() => openModal(pic)}
                     className="border-2 border-cyan-400 h-48 md:h-68 w-[100%] flex-none rounded-lg md:object-cover shadow-sm cursor-pointer"

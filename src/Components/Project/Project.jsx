@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 import ProjectManagementLoginPage from "../../assets/Projects/FullStack/ProjectManagement/ProjectManagementLoginPage.png";
 import PortfolioBuilderLogin from "../../assets/Projects/FullStack/Portfolio Builder/PortfolioBuilderLogin.png";
-import ScanBorrowHomePage from "../../assets/Projects/FullStack/Scan Borrow/ScanBorrowHomePage.png";
+import EventFlowLogin from "../../assets/Projects/FullStack/EventFlow/EventFlowLogin.png";
 
 function Project() {
   const latestProjects = [
@@ -110,26 +110,27 @@ function Project() {
         "Deploying frontend and backend applications separately and managing production environment variables.",
       ],
     },
+
     {
       language: "Full Stack",
       video: "video",
-      img: ScanBorrowHomePage,
-      title: "ScanBorrow — Smart Library Management System",
+      img: EventFlowLogin,
+      title: "EventFlow — Real-Time Event Booking Platform",
 
       shortDesc:
-        "A QR-based full-stack library management system with separate student and admin dashboards, secure role-based access, book borrowing and returns, overdue tracking, fine calculation, and reporting.",
+        "A full-stack MERN event booking platform featuring real-time seat selection, Redis-based seat reservations, secure payments, Google authentication, and role-based dashboards for customers, organizers, and administrators.",
 
       fullDesc: [
-        "ScanBorrow is a full-stack smart library management system designed to simplify book borrowing and return operations through QR codes. The application provides separate dashboards for students and administrators. Students can search for books, borrow and return book copies using QR codes, view currently issued books, monitor due dates, and receive overdue notifications.",
+        "EventFlow is a full-stack MERN application that enables users to discover events, select seats through an interactive seating interface, and complete bookings through a secure payment workflow. The platform uses Redis to temporarily hold selected seats and Socket.IO to synchronize seat availability in real time, preventing conflicting reservations when multiple users attempt to book the same seats.",
 
-        "The administrator side provides book and book-copy management, transaction tracking, defaulter reports, fine reports, and activity information. The backend uses Microsoft SQL Server with a normalized relational schema for users, books, book copies, and transaction records. JWT authentication and role-based access control protect student and administrator functionality, while automatic fine calculations handle overdue book returns.",
+        "The application provides separate customer, organizer, and administrator workflows with JWT-based authentication, Google sign-in, and role-based authorization. Organizers can create and manage events, configure seating arrangements, and publish events using approved venues, while administrators manage organizer approvals, venue approvals, categories, and event moderation. Safepay is integrated for hosted payment checkout and webhook-based booking confirmation, with Brevo handling transactional emails. The frontend is deployed on Vercel, the backend on Render, MongoDB Atlas provides database hosting, and Upstash Redis manages temporary seat reservations.",
       ],
 
       timeLine: [
         {
           duration: "YOUR_DURATION",
           isCompleted: true,
-          status: "Completed",
+          status: "Live",
         },
       ],
 
@@ -138,27 +139,40 @@ function Project() {
         "Tailwind CSS",
         "Node.js",
         "Express.js",
-        "Microsoft SQL Server",
+        "MongoDB",
+        "Redis",
+        "Socket.IO",
         "JWT",
-        "REST APIs",
-        "html5-qrcode",
+        "Google OAuth",
+        "Safepay",
+        "Brevo",
+        "Vercel",
+        "Render",
+        "Upstash",
       ],
 
       keyFeatures: [
-        "QR-Based Borrowing & Returns – Students can borrow and return library books using QR codes.",
-        "Student & Admin Dashboards – Separate interfaces and functionality based on user roles.",
-        "Fine & Overdue Management – Automatic late fine calculation and overdue book alerts.",
-        "Library Administration – Manage books, individual book copies, transactions, defaulters, and reports.",
-        "Relational Database – Normalized Microsoft SQL Server schema for users, books, copies, and transaction records.",
-        "Security – JWT authentication and role-based access control for protected application functionality.",
+        "Authentication – Secure registration, login, Google sign-in, and JWT authentication using HTTP-only cookies.",
+        "Event Discovery – Browse published events, view event details, and explore available seating arrangements.",
+        "Real-Time Seat Booking – Interactive seat selection with live availability updates using Socket.IO.",
+        "Temporary Seat Reservations – Redis-based seat holds with automatic expiration and protection against conflicting reservations.",
+        "Payment Integration – Safepay hosted checkout with webhook-based payment verification and booking confirmation.",
+        "Customer Dashboard – View bookings, manage account settings, and apply to become an organizer.",
+        "Organizer Dashboard – Create, update, publish, and cancel events, manage seating arrangements, and block or unblock seats.",
+        "Admin Dashboard – Manage organizer requests, venue approvals, event moderation, and event categories.",
+        "Email Notifications – Transactional emails and booking confirmations using Brevo.",
+        "Deployment – React frontend deployed on Vercel, Express backend on Render, MongoDB Atlas database, and Upstash Redis.",
       ],
 
       learning: [
-        "Designing and working with a normalized relational database in Microsoft SQL Server.",
-        "Integrating QR-code scanning functionality into a React application.",
-        "Implementing automatic fine and overdue calculations using backend business logic.",
-        "Building separate admin and student workflows with role-based access control.",
-        "Creating reporting APIs and managing transactional data across related database tables.",
+        "Building a complete MERN application with customer, organizer, and administrator workflows.",
+        "Implementing real-time seat availability synchronization using Socket.IO.",
+        "Managing concurrent seat reservations using Redis, atomic Lua scripts, and automatic key expiration.",
+        "Integrating Safepay hosted checkout with secure webhook verification and booking status management.",
+        "Implementing JWT authentication, Google sign-in, HTTP-only cookies, and role-based access control.",
+        "Designing MongoDB schemas and REST APIs for events, venues, seating arrangements, and bookings.",
+        "Integrating Brevo for transactional email notifications and booking confirmations.",
+        "Deploying a full-stack application using Vercel, Render, MongoDB Atlas, and Upstash Redis.",
       ],
     },
   ];
@@ -222,6 +236,7 @@ function Project() {
         duration-300
         hover:border-cyan-400
         hover:shadow-[0_12px_35px_rgba(34,211,238,0.15)]
+        cursor-pointer
       "
           >
             <div className="w-full h-[210px] overflow-hidden bg-gray-100 dark:bg-[#0b0f14]">
