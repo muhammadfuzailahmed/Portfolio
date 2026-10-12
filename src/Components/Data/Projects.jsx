@@ -48,20 +48,17 @@ import PortfolioBuilderRegister from "../../assets/Projects/FullStack/Portfolio 
 import PortfolioBuilderHome from "../../assets/Projects/FullStack/Portfolio Builder/PortfolioBuilderHome.png";
 import PortfolioBuilderPortfolioReady from "../../assets/Projects/FullStack/Portfolio Builder/PortfolioBuilderPortfolioReady.png";
 import PortfolioBuilderAccount from "../../assets/Projects/FullStack/Portfolio Builder/PortfolioBuilderAccount.png";
-import PortfolioBuilderVideo from "../../assets/Projects/FullStack/Portfolio Builder/PortfolioBuilderVideo.mp4";
 import BankingManagementSystemvideo from "../../assets/Projects/ManagementSystems/BankingManagementSystem/BankingManagementSystemvideo.mp4";
 import ProjectManagementLoginPage from "../../assets/Projects/FullStack/ProjectManagement/ProjectManagementLoginPage.png";
 import ProjectManagementRegister from "../../assets/Projects/FullStack/ProjectManagement/ProjectManagementRegister.png";
 import ProjectManagementHome from "../../assets/Projects/FullStack/ProjectManagement/ProjectManagementHome.png";
 import ProjectManagementProjects from "../../assets/Projects/FullStack/ProjectManagement/ProjectManagementProjects.png";
 import ProjectManagementAccount from "../../assets/Projects/FullStack/ProjectManagement/ProjectManagementAccount.png";
-import ProjectManagementVideo from "../../assets/Projects/FullStack/ProjectManagement/ProjectManagementVideo.mp4";
 import EventFlowLogin from "../../assets/Projects/FullStack/EventFlow/EventFlowLogin.png"
 import EventFlowRegister from "../../assets/Projects/FullStack/EventFlow/EventFlowRegister.png"
 import EventFlowEvent from "../../assets/Projects/FullStack/EventFlow/EventFlowEvent.png"
 import EventFlowSeats from "../../assets/Projects/FullStack/EventFlow/EventFlowSeats.png"
 import EventFlowAccount from "../../assets/Projects/FullStack/EventFlow/EventFlowAccount.png"
-import EventFlowVideo from "../../assets/Projects/FullStack/EventFlow/EventFlowVideo.mp4"
 
 export const Projects = [
   {
@@ -71,7 +68,7 @@ export const Projects = [
 
     sourceCode: "https://github.com/muhammadfuzailahmed/Event-Flow-Frontend",
 
-    video: EventFlowVideo,
+    video: "https://res.cloudinary.com/irobv6h2/video/upload/EventFlowVideo.mp4",
 
     img: EventFlowLogin,
 
@@ -146,7 +143,7 @@ export const Projects = [
 
     sourceCode: "https://github.com/muhammadfuzailahmed/portfolio-builder",
 
-    video: PortfolioBuilderVideo,
+    video: "https://res.cloudinary.com/irobv6h2/video/upload/PortfolioBuilderVideo.mp4",
 
     img: PortfolioBuilderLogin,
 
@@ -213,7 +210,7 @@ export const Projects = [
     sourceCode:
       "https://github.com/muhammadfuzailahmed/Project-Management-Frontend",
 
-    video: ProjectManagementVideo,
+    video: "https://res.cloudinary.com/irobv6h2/video/upload/ProjectManagementVideo.mp4",
 
     img: ProjectManagementLoginPage,
 
