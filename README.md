@@ -3,7 +3,7 @@
 A modern, responsive, and minimal portfolio website built using **React + Vite**, showcasing my projects, skills, and journey as a growing web & software developer.  
 This portfolio reflects my learning progress over the past months and serves as my digital identity for employers, clients, and collaborators.
 
-🔗 **Live Demo:** https://portfolio-three-beta-19.vercel.app/
+🔗 **Live Demo:** fuzail.me
 
 ## 🚀 Overview  
 
@@ -29,7 +29,7 @@ This serves as my personal space to show my development skills and growth.
 - CSS3  
 
 **Deployment:**  
-- Vercel: https://portfolio-three-beta-19.vercel.app/
+- Vercel: fuzail.me
 
  ## Features
 
